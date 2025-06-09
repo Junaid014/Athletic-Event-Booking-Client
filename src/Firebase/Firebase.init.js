@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyATlm857G9IHLvcpGsYXK3EjU4uh_c-HQs",
-  authDomain: "athletic-event.firebaseapp.com",
-  projectId: "athletic-event",
-  storageBucket: "athletic-event.firebasestorage.app",
-  messagingSenderId: "985410348247",
-  appId: "1:985410348247:web:f2186efbb85a403758fc92"
+  apiKey:import.meta.env.VITE_apiKey,
+  authDomain:import.meta.env.VITE_authDomain,
+  projectId:import.meta.env.VITE_projectId,
+  storageBucket:import.meta.env.VITE_storageBucket,
+  messagingSenderId:import.meta.env.VITE_messagingSenderId,
+  appId:import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase
