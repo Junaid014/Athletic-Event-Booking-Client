@@ -123,7 +123,7 @@ const Login = () => {
           <button
             type='submit'
             disabled={isLoading}
-            className="w-full py-2 bg-green-400 text-white font-bold rounded-lg transition duration-300"
+            className="w-full py-2 cursor-pointer bg-green-400 text-white font-bold rounded-lg transition duration-300"
           >
             {isLoading ? "Logging in..." : "Login"}
           </button>

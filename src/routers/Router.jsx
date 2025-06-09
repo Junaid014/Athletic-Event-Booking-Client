@@ -7,12 +7,14 @@ import Home from "../Pages/Home";
 import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Authentication/Login";
 import SignUp from "../Pages/Authentication/SignUp";
+import ErrorElement from "../Pages/ErrorElement";
 
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
+    errorElement:<ErrorElement/>,
     Component:Root,
 
     children:[
