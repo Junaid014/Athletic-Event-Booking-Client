@@ -3,12 +3,13 @@ import {
  
 } from "react-router";
 import Root from "../Layouts/Root";
-import Home from "../Pages/Home";
+
 import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Authentication/Login";
 import SignUp from "../Pages/Authentication/SignUp";
 import ErrorElement from "../Pages/ErrorElement";
 import AddEvent from "../Pages/Event/AddEvent";
+import Home from "../Pages/Home/Home";
 
 
 

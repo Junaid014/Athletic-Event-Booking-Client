@@ -16,7 +16,7 @@ const AddEvent = () => {
 
         const eventData = {
             name: form.name.value,
-            email: form.email.value,
+            email: form.hr_email.value,
             eventName: form.eventName.value,
             eventType: form.eventType.value,
             deadline: deadline?.toLocaleDateString('en-CA'),
@@ -24,27 +24,23 @@ const AddEvent = () => {
             description: form.description.value,
         };
 
-        try {
-            const response = await axios.post('http://localhost:3000/events', eventData);
-            if (response.data) {
-                Swal.fire({
-                    position: "center",
-                    icon: "success",
-                    title: "Event Added Successfully",
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-                form.reset();
-                setDeadline(null);
-            }
-        } catch (error) {
-            Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Something went wrong!",
-            });
-            console.error(error);
-        }
+         axios.post('http://localhost:3000/events', eventData)
+        .then(res=>{
+            if (res.data.insertedId) {
+                    Swal.fire({
+                        position: "top-center",
+                        icon: "success",
+                        title: "This event has been saved and published.",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+
+       
     };
 
     return (
@@ -129,7 +125,7 @@ const AddEvent = () => {
                                     </label>
                                     <input
                                         type="email"
-                                        name="email"
+                                        name="hr_email"
                                         defaultValue={user?.email}
                                         readOnly
                                         className="w-full px-3 py-2 border border-gray-300 text-sm"
