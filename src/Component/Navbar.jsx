@@ -60,6 +60,18 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
+      <li className="mr-2 text-sm font-semibold">
+        <NavLink
+          to="/addEvent"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-[#3B82F6] underline'
+              : 'text-[#1E293B] hover:text-[#2563EB] hover:underline'
+          }
+        >
+          Add Event
+        </NavLink>
+      </li>
 
     </div>
   );
@@ -153,7 +165,7 @@ const Navbar = () => {
 
             <Link
               to="/auth/signUp"
-              className="px-7 py-2.5 rounded-full hover:rounded-lg cursor-pointer bg-green-400 text-white font-medium shadow-md hover:bg-green-500 transition duration-300"
+              className="px-7 py-2.5 hover:rounded-full rounded-lg cursor-pointer bg-green-400 text-white font-medium shadow-md hover:bg-green-500 transition duration-300"
             >
               Get Started
             </Link>

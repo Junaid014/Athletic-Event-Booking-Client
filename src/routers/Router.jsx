@@ -8,6 +8,7 @@ import AuthLayout from "../Layouts/AuthLayout";
 import Login from "../Pages/Authentication/Login";
 import SignUp from "../Pages/Authentication/SignUp";
 import ErrorElement from "../Pages/ErrorElement";
+import AddEvent from "../Pages/Event/AddEvent";
 
 
 
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             path:'/',
             index:true,
             Component:Home
+        },
+        {
+            path:'addEvent',
+            Component:AddEvent
         },
         {
     path: "/auth",
