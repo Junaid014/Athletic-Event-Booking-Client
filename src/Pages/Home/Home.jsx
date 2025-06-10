@@ -1,5 +1,5 @@
 import React, {  useEffect, useState } from 'react';
-import EventCard from './EventCard';
+import EventCard from './Card/EventCard';
 
 const Home = () => {
 

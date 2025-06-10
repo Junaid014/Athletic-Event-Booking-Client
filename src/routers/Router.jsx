@@ -1,6 +1,6 @@
 import {
   createBrowserRouter,
- 
+
 } from "react-router";
 import Root from "../Layouts/Root";
 
@@ -10,41 +10,54 @@ import SignUp from "../Pages/Authentication/SignUp";
 import ErrorElement from "../Pages/ErrorElement";
 import AddEvent from "../Pages/Event/AddEvent";
 import Home from "../Pages/Home/Home";
+import PrivetRoute from "../Provider/PrivetRoute";
+import EventDetails from "../Pages/Home/Card/EventDetails";
 
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    errorElement:<ErrorElement/>,
-    Component:Root,
+    errorElement: <ErrorElement />,
+    Component: Root,
 
-    children:[
-        {
-            path:'/',
-            index:true,
-            Component:Home
-        },
-        {
-            path:'addEvent',
-            Component:AddEvent
-        },
-        {
-    path: "/auth",
-    Component: AuthLayout,
     children: [
       {
-        path: "/auth/login",
-        Component: Login
+        path: '/',
+        index: true,
+        Component: Home
       },
       {
-        path: "/auth/signUp",
-        Component: SignUp
+        path: 'addEvent',
+        element: <PrivetRoute>
+          <AddEvent />
+        </PrivetRoute>
+      },
+      {
+        path: "events/:id",
+        loader: ({ params }) => fetch(`http://localhost:3000/events/${params.id}`),
+        element: <PrivetRoute>
+          <EventDetails/>
+        </PrivetRoute>
+      },
+
+
+      {
+        path: "/auth",
+        Component: AuthLayout,
+        children: [
+          {
+            path: "/auth/login",
+            Component: Login
+          },
+          {
+            path: "/auth/signUp",
+            Component: SignUp
+          },
+        ]
       },
     ]
-  },
-    ]
 
-   
+
   },
 ]);
