@@ -13,6 +13,7 @@ import Home from "../Pages/Home/Home";
 import PrivetRoute from "../Provider/PrivetRoute";
 import EventDetails from "../Pages/Home/Card/EventDetails";
 import BrowseEvents from "../Pages/Home/BrowseEvents";
+import MyPostedEvents from "../Pages/Home/MyPostedEvents/MyPostedEvents";
 
 
 
@@ -32,6 +33,12 @@ export const router = createBrowserRouter([
         path: 'addEvent',
         element: <PrivetRoute>
           <AddEvent />
+        </PrivetRoute>
+      },
+      {
+        path: 'myPostedEvents',
+        element: <PrivetRoute>
+          <MyPostedEvents/>
         </PrivetRoute>
       },
       {
