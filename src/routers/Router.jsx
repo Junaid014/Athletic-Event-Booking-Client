@@ -12,6 +12,7 @@ import AddEvent from "../Pages/Event/AddEvent";
 import Home from "../Pages/Home/Home";
 import PrivetRoute from "../Provider/PrivetRoute";
 import EventDetails from "../Pages/Home/Card/EventDetails";
+import BrowseEvents from "../Pages/Home/BrowseEvents";
 
 
 
@@ -32,6 +33,11 @@ export const router = createBrowserRouter([
         element: <PrivetRoute>
           <AddEvent />
         </PrivetRoute>
+      },
+      {
+        path:'browseEvents',
+        loader:()=>fetch('http://localhost:3000/events'),
+        Component:BrowseEvents
       },
       {
         path: "events/:id",

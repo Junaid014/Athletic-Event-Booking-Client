@@ -72,6 +72,18 @@ const Navbar = () => {
           Add Event
         </NavLink>
       </li>
+      <li className="mr-2 text-sm font-semibold">
+        <NavLink
+          to="/browseEvents"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-[#3B82F6] underline'
+              : 'text-[#1E293B] hover:text-[#2563EB] hover:underline'
+          }
+        >
+          Events
+        </NavLink>
+      </li>
 
     </div>
   );
