@@ -53,8 +53,8 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? 'text-[#3B82F6] underline'
-              : 'text-[#1E293B] hover:text-[#2563EB] hover:underline'
+             ? 'text-green-400 underline'
+              : 'text-[#1E293B] hover:text-green-400 hover:underline'
           }
         >
           Home
@@ -65,8 +65,8 @@ const Navbar = () => {
           to="/addEvent"
           className={({ isActive }) =>
             isActive
-              ? 'text-[#3B82F6] underline'
-              : 'text-[#1E293B] hover:text-[#2563EB] hover:underline'
+              ? 'text-green-400 underline'
+              : 'text-[#1E293B] hover:text-green-400 hover:underline'
           }
         >
           Add Event
@@ -77,25 +77,25 @@ const Navbar = () => {
           to="/browseEvents"
           className={({ isActive }) =>
             isActive
-              ? 'text-[#3B82F6] underline'
-              : 'text-[#1E293B] hover:text-[#2563EB] hover:underline'
+             ? 'text-green-400 underline'
+              : 'text-[#1E293B] hover:text-green-400 hover:underline'
           }
         >
           Events
         </NavLink>
       </li>
-      <li className="mr-2 text-sm font-semibold">
+      {user && <li className="mr-2 text-sm font-semibold">
         <NavLink
           to="/myPostedEvents"
           className={({ isActive }) =>
             isActive
-              ? 'text-[#3B82F6] underline'
-              : 'text-[#1E293B] hover:text-[#2563EB] hover:underline'
+              ? 'text-green-400 underline'
+              : 'text-[#1E293B] hover:text-green-400 hover:underline'
           }
         >
           My Events
         </NavLink>
-      </li>
+      </li>}
 
     </div>
   );
@@ -157,7 +157,7 @@ const Navbar = () => {
             </button>
 
             {dropdownOpen && (
-              <div className="absolute right-0 mt-44    w-64 py-4  bg-white rounded-md shadow-lg border border-gray-200 z-50">
+              <div className="absolute right-0 mt-14    w-64 py-4  bg-white rounded-md shadow-lg border border-gray-200 z-50">
                 <div className="p-3 border-b border-gray-100 text-gray-700 font-semibold">
                   {user.displayName}
                 </div>
