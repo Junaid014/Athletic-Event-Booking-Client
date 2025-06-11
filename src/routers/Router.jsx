@@ -14,6 +14,7 @@ import PrivetRoute from "../Provider/PrivetRoute";
 import EventDetails from "../Pages/Home/Card/EventDetails";
 import BrowseEvents from "../Pages/Home/BrowseEvents";
 import MyPostedEvents from "../Pages/Home/MyPostedEvents/MyPostedEvents";
+import UpdateEvent from "../Pages/Home/MyPostedEvents/UpdateEvent";
 
 
 
@@ -52,6 +53,12 @@ export const router = createBrowserRouter([
         element: <PrivetRoute>
           <EventDetails/>
         </PrivetRoute>
+      },
+      {
+        path: "updateEvent/:id",
+        loader: ({ params }) => fetch(`http://localhost:3000/events/${params.id}`),
+        Component:UpdateEvent
+        
       },
 
 

@@ -101,7 +101,7 @@ const MyPostedEvents = () => {
                         >
                           <MdDeleteOutline className="text-lg" />
                         </button>
-                        <Link to={`/updateevent/${event._id}`}>
+                        <Link to={`/updateEvent/${event._id}`}>
                           <button className="btn btn-sm bg-orange-200">
                             <FaPenFancy className="text-sm" />
                           </button>
