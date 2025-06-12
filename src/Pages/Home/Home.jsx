@@ -1,8 +1,9 @@
 import React, {  useEffect, useState } from 'react';
 import EventCard from './Card/EventCard';
 import { Link } from 'react-router';
-import image from '../../assets/1470-fotor-20250611163552 (1)-fotor-20250611164024.png'
+import image from '../../assets/cecep-rahmat-H3YvH_LALTc-unsplash-fotor-20250611181615.jpg'
 import Count from './Count';
+import Footer from '../../Component/Footer';
 
 const Home = () => {
 
@@ -36,12 +37,14 @@ const Home = () => {
             </div>
             <Link to='/browseEvents' className='mt-5 btn bg-gradient-to-r from-green-600 to-green-800 text-white rounded-lg font-medium shadow-md hover:from-green-700 hover:to-green-900 transition duration-300 w-48 flex mx-auto '>Browse Events</Link>
 
-          <div className=''>
+          {/* <div className=''>
               <div className=' mt-14'>
                 <img className='w-full lg:h-[500px] ' src={image} alt="" />
             </div>
            <div className='relative bottom-24'> <Count/></div>
-          </div>
+          </div> */}
+
+          <Footer/>
         </div>
         
     );

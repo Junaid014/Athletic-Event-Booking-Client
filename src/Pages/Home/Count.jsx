@@ -9,7 +9,7 @@ const Count = () => {
     <div className='w-11/12 mx-auto'>
 
     
-      <div ref={prev} className='mb-24 border bg-[#eeeeee] border-[#eeeeee] grid md:grid-cols-4 grid-cols-1 lg:gap-10'>
+      <div ref={prev} className='mb-24 border bg-[#eeeeee] border-gray-300 grid md:grid-cols-4 grid-cols-1 lg:gap-10'>
         {[
               {  count: 10, label: 'Years of Experience', duration: 4 },
           {  count: 1500, label: 'Events Hosted', duration: 7 },
@@ -22,7 +22,7 @@ const Count = () => {
            
             <div className="flex text-4xl items-center justify-center font-extrabold mt-2">
               {View ? (
-                <CountUp className='font-extrabold text-5xl' end={item.count} duration={item.duration} start={1} />
+                <CountUp className='font-extrabold text-black text-7xl' end={item.count} duration={item.duration} start={1} />
               ) : 
               
               (
