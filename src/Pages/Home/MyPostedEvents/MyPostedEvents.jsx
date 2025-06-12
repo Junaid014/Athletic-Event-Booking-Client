@@ -7,6 +7,7 @@ import { AuthContext } from '../../../Provider/AuthContext';
 import Loading from '../../Loading';
 import { Link } from 'react-router';
 import NoPostedEvents from './NoPostedEvents';
+import Footer from '../../../Component/Footer';
 
 const MyPostedEvents = () => {
   const { user, loading } = useContext(AuthContext);
@@ -115,6 +116,7 @@ const MyPostedEvents = () => {
           </div>
         )}
       </div>
+      <Footer/>
       
     </div>
   );

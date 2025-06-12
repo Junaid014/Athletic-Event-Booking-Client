@@ -87,7 +87,8 @@ const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = 
                     {
                         hideDetails && (
                             <div className="card-actions">
-                                <Link to={`/events/${_id}`} className="mt-5 btn bg-gradient-to-r from-green-600 to-green-800 text-white rounded-lg font-medium shadow-md hover:from-green-700 hover:to-green-900 transition duration-300 w-full">View Details</Link>
+                                <Link to={`/events/${_id}`} className="mt-5  btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
+ w-full">View Details</Link>
                             </div>
                         )
                     }

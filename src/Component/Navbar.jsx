@@ -53,8 +53,8 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) =>
             isActive
-             ? 'text-green-400 underline'
-              : 'text-[#1E293B] hover:text-green-400 hover:underline'
+             ? 'text-[#1a8012] underline'
+              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
           }
         >
           Home
@@ -65,8 +65,8 @@ const Navbar = () => {
           to="/addEvent"
           className={({ isActive }) =>
             isActive
-              ? 'text-green-400 underline'
-              : 'text-[#1E293B] hover:text-green-400 hover:underline'
+               ? 'text-[#1a8012] underline'
+              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
           }
         >
           Add Event
@@ -77,8 +77,8 @@ const Navbar = () => {
           to="/browseEvents"
           className={({ isActive }) =>
             isActive
-             ? 'text-green-400 underline'
-              : 'text-[#1E293B] hover:text-green-400 hover:underline'
+             ? 'text-[#1a8012] underline'
+              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
           }
         >
           Events
@@ -89,8 +89,8 @@ const Navbar = () => {
           to="/myPostedEvents"
           className={({ isActive }) =>
             isActive
-              ? 'text-green-400 underline'
-              : 'text-[#1E293B] hover:text-green-400 hover:underline'
+               ? 'text-[#1a8012] underline'
+              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
           }
         >
           My Events
@@ -149,8 +149,8 @@ const Navbar = () => {
               alt="user"
             />
             <button
-              className="px-5 py-2.5 cursor-pointer bg-gradient-to-r from-[#00a7ac] to-[#00cfc3] text-white rounded-lg font-medium shadow-md hover:from-[#008f92] hover:to-[#00b5a9]
- transition duration-300"
+              className="px-7 py-5.5 cursor-pointer btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
+"
               onClick={handleSignOut}
             >
               SignOut
@@ -181,7 +181,7 @@ const Navbar = () => {
           <div className="flex gap-3">
             <Link
               to="/auth/login"
-              className="px-5 cursor-pointer font-medium py-2 border border-green-200   duration-300 ease-in-out  
+              className="px-5 cursor-pointer font-medium py-2.5 border border-[#1a8012]   duration-300 ease-in-out  
  rounded-md transition"
             >
               Login
@@ -189,7 +189,8 @@ const Navbar = () => {
 
             <Link
               to="/auth/signUp"
-              className="px-7 py-2.5 hover:rounded-full rounded-lg cursor-pointer bg-green-400 text-white font-medium shadow-md hover:bg-green-500 transition duration-300"
+              className="px-7 hover:px-8 py-6 hover:rounded-full btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
+"
             >
               Get Started
             </Link>
