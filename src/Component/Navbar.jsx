@@ -84,6 +84,21 @@ const Navbar = () => {
           Events
         </NavLink>
       </li>
+      
+      {user && <li className="mr-2 text-sm font-semibold">
+        <NavLink
+          to="/myBookings"
+          className={({ isActive }) =>
+            isActive
+             ? 'text-[#1a8012] underline'
+              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
+          }
+        >
+          My Bookings
+        </NavLink>
+      </li>}
+
+
       {user && <li className="mr-2 text-sm font-semibold">
         <NavLink
           to="/myPostedEvents"

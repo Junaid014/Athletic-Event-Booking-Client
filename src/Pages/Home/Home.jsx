@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import EventCard from './Card/EventCard';
 import { Link } from 'react-router';
 import image from '../../assets/cecep-rahmat-H3YvH_LALTc-unsplash-fotor-20250611181615.jpg'
 import Count from './Count';
 import Footer from '../../Component/Footer';
+import Loading from '../../Pages/Loading';
+import { AuthContext } from '../../Provider/AuthContext';
 
 const Home = () => {
 
-
+    const {  loading } = use(AuthContext);
     const [events, setEvents] = useState([]);
     const [dataLoading, setDataLoading] = useState(true);
     useEffect(() => {
@@ -20,7 +22,9 @@ const Home = () => {
             })
     }, [])
 
-
+     if (loading || dataLoading) {
+    return <Loading />;
+  }
     return (
         <div className=''>
             <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2  lg:mx-auto mx-20 mb-14   gap-12 mt-10 lg:w-9/12 '>

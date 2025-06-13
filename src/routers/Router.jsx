@@ -15,6 +15,7 @@ import EventDetails from "../Pages/Home/Card/EventDetails";
 import BrowseEvents from "../Pages/Home/BrowseEvents";
 import MyPostedEvents from "../Pages/Home/MyPostedEvents/MyPostedEvents";
 import UpdateEvent from "../Pages/Home/MyPostedEvents/UpdateEvent";
+import MyBookings from "../Pages/Event/MyBookings";
 
 
 
@@ -59,6 +60,12 @@ export const router = createBrowserRouter([
         loader: ({ params }) => fetch(`http://localhost:3000/events/${params.id}`),
         Component:UpdateEvent
         
+      },
+      {
+        path:'myBookings',
+        element:<PrivetRoute>
+          <MyBookings/>
+        </PrivetRoute>
       },
 
 
