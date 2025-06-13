@@ -126,7 +126,7 @@ const Navbar = () => {
 
           <div className="flex gap-2 justify-center items-center">
             <img className="w-16 h-16  cursor-pointer" src={btn_logo} alt="" />
-            <a className="text-2xl  text-black font-extrabold">AthleticHub </a>
+            <a className="text-2xl  text-black font-extrabold roboto">AthleticHub </a>
           </div>
         </div>
 

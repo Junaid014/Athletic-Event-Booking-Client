@@ -46,10 +46,10 @@ const AddEvent = () => {
     return (
         <>
             <div className='bg-gray-50 mb-14'>
-                <div className='w-7xl mx-auto'>
+                <div className='lg:w-7xl mx-auto'>
                     <div className="px-24 pt-16">
-                        <h2 className="text-3xl text-center text-[#374151] font-extrabold">Add an Event</h2>
-                        <p className='text-center text-[#1B1A1AB3] w-[900px] mx-auto mb-8'>
+                        <h2 className="text-3xl text-center text-[#374151] font-extrabold roboto">Add an Event</h2>
+                        <p className='text-center text-[#1B1A1AB3] md:w-[900px] mx-auto mb-8'>
                             Fill in the event details below. Participants will be able to view and register.
                         </p>
                         <form onSubmit={handleAddEvent}>
@@ -67,7 +67,7 @@ const AddEvent = () => {
                                         className="w-full px-3 py-2 border border-gray-300 text-sm"
                                     />
                                 </div>
-                                <div className="form-control md:w-1/2 md:ml-4">
+                                <div className="form-control md:w-1/2 mt-3 md:mt-0 md:ml-4">
                                     <label className="label">
                                         <span className="label-text text-gray-900 font-medium">Event Type</span>
                                     </label>
@@ -88,22 +88,6 @@ const AddEvent = () => {
                                 </div>
                             </div>
 
-                            {/* Deadline */}
-                            <div className="md:flex mb-8">
-                                <div className="form-control md:w-1/2">
-                                    <label className="label">
-                                        <span className="label-text text-gray-900 font-medium">Deadline</span>
-                                    </label>
-                                    <DatePicker
-                                        selected={deadline}
-                                        onChange={(date) => setDeadline(date)}
-                                        dateFormat="yyyy-MM-dd"
-                                        placeholderText="Select deadline"
-                                        required
-                                        className="w-full px-3 py-2 border border-gray-300 text-sm"
-                                    />
-                                </div>
-                            </div>
 
                             {/* Name and Email */}
                             <div className="md:flex mb-8">
@@ -119,7 +103,7 @@ const AddEvent = () => {
                                         className="w-full px-3 py-2 border border-gray-300 text-sm"
                                     />
                                 </div>
-                                <div className="form-control md:w-1/2 md:ml-4">
+                                <div className="form-control md:w-1/2 mt-3 md:mt-0 md:ml-4">
                                     <label className="label">
                                         <span className="label-text text-gray-900 font-medium">Email</span>
                                     </label>
@@ -146,7 +130,7 @@ const AddEvent = () => {
                                         className="w-full px-3 py-2 border border-gray-300 text-sm"
                                     ></textarea>
                                 </div>
-                                <div className="form-control md:w-1/2 md:ml-4">
+                                <div className="form-control mt-3 md:mt-0 md:w-1/2 md:ml-4">
                                     <label className="label">
                                         <span className="label-text text-gray-900 font-medium">Photo URL</span>
                                     </label>
@@ -154,6 +138,23 @@ const AddEvent = () => {
                                         type="text"
                                         name="photo"
                                         placeholder="Photo URL"
+                                        required
+                                        className="w-full px-3 py-2 border border-gray-300 text-sm"
+                                    />
+                                </div>
+                            </div>
+                            
+                            {/* Deadline */}
+                            <div className="md:flex mb-8">
+                                <div className="form-control md:w-1/2">
+                                    <label className="label">
+                                        <span className="label-text mr-2 text-gray-900 font-medium">Deadline</span>
+                                    </label>
+                                    <DatePicker
+                                        selected={deadline}
+                                        onChange={(date) => setDeadline(date)}
+                                        dateFormat="yyyy-MM-dd"
+                                        placeholderText="Select deadline"
                                         required
                                         className="w-full px-3 py-2 border border-gray-300 text-sm"
                                     />

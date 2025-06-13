@@ -65,7 +65,7 @@ const UpdateEvent = () => {
     <div className='bg-gray-50 mb-14'>
       <div className='w-7xl mx-auto'>
         <div className="px-24 pt-16">
-          <h2 className="text-3xl text-center text-[#374151] font-extrabold">Update Event</h2>
+          <h2 className="text-3xl text-center text-[#374151] font-extrabold roboto">Update Event</h2>
           <p className='text-center text-[#1B1A1AB3] w-[900px] mx-auto mb-8'>
             Update your event details below. Participants will see the updated information.
           </p>
@@ -182,7 +182,7 @@ const UpdateEvent = () => {
             <input
               type="submit"
               value="Update Event"
-              className="mt-5 btn bg-gradient-to-r from-green-600 to-green-800 text-white rounded-lg font-medium shadow-md hover:from-green-700 hover:to-green-900 transition duration-300 w-full"
+              className="mt-5 btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300 w-full"
             />
           </form>
         </div>

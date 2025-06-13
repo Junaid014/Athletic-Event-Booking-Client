@@ -67,7 +67,7 @@ const MyPostedEvents = () => {
                   <th>Event Info</th>
                   <th>Type</th>
                   <th>Organizer</th>
-                  <th>Deadline</th>
+                  <th>Event Date</th>
                   <th>Actions</th>
                 </tr>
               </thead>

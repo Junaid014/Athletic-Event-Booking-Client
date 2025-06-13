@@ -48,35 +48,36 @@ const EventDetails = () => {
           />
           <div className="">
             <div className="flex items-center justify-between">
-              <h2 className="text-lg font-bold text-base-content">{eventType}</h2>
+              <h2 className="text-lg font-bold text-base-content roboto">{eventType}</h2>
               <p className="text-lg font-bold text-base-content">
                 Total Applied: <span className="bg-gray-700 text-white border border-white px-2 rounded-full">{localApplyCount}</span>
               </p>
             </div>
-            <h2 className="text-lg mb-3 mt-3 font-medium text-base-content">{eventName}</h2>
-            <h3 className="text-sm text-base-content font-semibold pb-4">
-              Deadline: <span className="font-medium text-white bg-[#444b53] rounded-lg px-2 py-0.5">{deadline}</span>
+            
+            <h3 className="text-sm mt-4 text-base-content font-semibold pb-4">
+              Event Date: <span className="font-medium text-white bg-[#444b53] rounded-lg px-2 py-0.5">{deadline}</span>
             </h3>
-            <div className="flex justify-between items-center border-t pt-4 pb-2.5 border-dashed border-gray-400">
+            <div className="flex gap-3 items-center border-t pt-4 pb-2.5 border-dashed border-gray-400">
               <p className="text-sm font-medium">Organized By:</p>
               <p className="text-sm font-bold">{name}</p>
             </div>
-            <p className="text-base font-bold mt-2">Event Details:</p>
-            <p className="lg:w-[500px] text-base-content">{description}</p>
-            <span className="flex gap-2 items-center mt-4">
+            <span className="flex border-b pb-4  border-dashed border-gray-400 gap-2 items-center mt-2">
               <p className="text-base font-medium">Contact:</p>
               <p className="font-bold text-base-content">{email}</p>
             </span>
+            <p className="text-base font-bold mt-2">Event Details:</p>
+            <p className="lg:w-[500px] text-base-content">{description}</p>
+            
 
             {/* Apply Button */}
             <div className="flex items-center gap-5 mt-4">
-              <h2 className="text-lg font-bold">Apply Now:</h2>
+              <h2 className=" font-semibold roboto">Apply Now:</h2>
               <div className="relative group">
                 <button
                   onClick={handleApply}
                   disabled={hasApplied}
-                  className={`border border-gray-300 text-2xl px-3 py-1 rounded ${
-                    hasApplied ? 'bg-red-600 text-white cursor-not-allowed' : 'bg-green-600 text-white hover:bg-green-700'
+                  className={`border border-gray-300  text-sm px-3 py-1 rounded ${
+                    hasApplied ? 'bg-red-500 text-white cursor-not-allowed' : 'bg-green-600 text-white cursor-pointer hover:bg-green-700'
                   }`}
                 >
                   {hasApplied ? '✔️ Applied' : 'Apply Now'}
