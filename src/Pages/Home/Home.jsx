@@ -6,6 +6,7 @@ import Count from './Count';
 import Footer from '../../Component/Footer';
 import Loading from '../../Pages/Loading';
 import { AuthContext } from '../../Provider/AuthContext';
+import PopularEvent from '../Event/Popular/PopularEvent';
 
 const Home = () => {
    
@@ -52,6 +53,7 @@ const Home = () => {
                 </div>
                 <div className='relative bottom-24'> <Count /></div>
             </div>
+            <PopularEvent/>
 
             <Footer />
         </div>
