@@ -10,11 +10,16 @@ const PopularEvent = () => {
     Popular Events Ongoing
   </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-20">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-20">
     <PopularEventCard
-      eventName="Swimming"
-      image="https://i.ibb.co/8nFJYtsn/20945194.jpg "
-      hoverImage="https://i.ibb.co/tpr9pjBD/4496754.jpg"
+      eventName="Sprint"
+      image="https://i.ibb.co/8LStqt3s/7138866-1.jpg "
+      hoverImage="https://i.ibb.co/67bqCHNw/jonathan-chng-Hgo-Kvt-Kpy-HA-unsplash-1.jpg"
+    />
+    <PopularEventCard
+      eventName="Swimming "
+      image="https://i.ibb.co/vx7hF0sT/2105-i301-016-F-m004-c9-International-Olympic-Day-isometric-background-1.jpg"
+      hoverImage="https://i.ibb.co/Ndg7JqJP/five-swimmers-racing-against-each-other-swiming-pool-1.jpg"
     />
     <PopularEventCard
       eventName="Badminton "

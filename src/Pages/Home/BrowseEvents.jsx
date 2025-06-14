@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import EventCard from './Card/EventCard';
+import Footer from '../../Component/Footer';
 
 const BrowseEvents = () => {
     const initialEvents = useLoaderData(); 
@@ -44,6 +45,7 @@ const BrowseEvents = () => {
             }
             
             </div>
+            <Footer/>
         </div>
     );
 };

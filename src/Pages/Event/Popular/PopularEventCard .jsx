@@ -2,7 +2,7 @@ const PopularEventCard = ({ eventName, image, hoverImage }) => {
   return (
    <div className="w-full group max-w-xs mx-auto group cursor-pointer">
 
-      <div className="relative w-full h-56 overflow-hidden rounded-xl shadow-md p-2">
+      <div className="relative  w-full h-56 overflow-hidden rounded-xl shadow-md p-2">
         <div className="relative w-full h-full rounded-lg overflow-hidden">
           {/* img 1 */}
           <img
@@ -14,7 +14,7 @@ const PopularEventCard = ({ eventName, image, hoverImage }) => {
           <img
             src={image}
             alt={eventName}
-            className="w-full h-full object-cover rounded-lg z-10 relative transition-all duration-500 ease-in-out group-hover:translate-y-full"
+            className="w-full   rounded-lg z-10 relative transition-all duration-500 ease-in-out group-hover:translate-y-full"
           />
         </div>
       </div>
