@@ -22,11 +22,12 @@ const AddEvent = () => {
             deadline: deadline?.toLocaleDateString('en-CA'),
             photo: form.photo.value,
             description: form.description.value,
+            location: form.location.value,
         };
 
-         axios.post('http://localhost:3000/events', eventData)
-        .then(res=>{
-            if (res.data.insertedId) {
+        axios.post('http://localhost:3000/events', eventData)
+            .then(res => {
+                if (res.data.insertedId) {
                     Swal.fire({
                         position: "top-center",
                         icon: "success",
@@ -35,12 +36,12 @@ const AddEvent = () => {
                         timer: 1500
                     });
                 }
-        })
-        .catch(error=>{
-            console.log(error);
-        })
+            })
+            .catch(error => {
+                console.log(error);
+            })
 
-       
+
     };
 
     return (
@@ -117,6 +118,36 @@ const AddEvent = () => {
                                 </div>
                             </div>
 
+                            
+                            {/* Deadline */}
+                            <div className="md:flex items-center justify-between mb-8">
+                                <div className="form-control md:w-1/2">
+                                    <label className="label">
+                                        <span className="label-text mr-2 text-gray-900 font-medium">Deadline</span>
+                                    </label>
+                                    <DatePicker
+                                        selected={deadline}
+                                        onChange={(date) => setDeadline(date)}
+                                        dateFormat="yyyy-MM-dd"
+                                        placeholderText="Select deadline"
+                                        required
+                                        className="w-full px-3 py-2 border border-gray-300 text-sm"
+                                    />
+                                </div>
+                                <div className="form-control md:w-1/2 mt-3 md:mt-0 md:ml-4">
+                                    <label className="label">
+                                        <span className="label-text text-gray-900 font-medium">Location</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="location"
+                                        placeholder="Event Location"
+                                        required
+                                        className="w-full px-3 py-2 border border-gray-300 text-sm"
+                                    />
+                                </div>
+                            </div>
+
                             {/* Description and Photo */}
                             <div className="md:flex mb-8">
                                 <div className="form-control md:w-1/2">
@@ -143,23 +174,7 @@ const AddEvent = () => {
                                     />
                                 </div>
                             </div>
-                            
-                            {/* Deadline */}
-                            <div className="md:flex mb-8">
-                                <div className="form-control md:w-1/2">
-                                    <label className="label">
-                                        <span className="label-text mr-2 text-gray-900 font-medium">Deadline</span>
-                                    </label>
-                                    <DatePicker
-                                        selected={deadline}
-                                        onChange={(date) => setDeadline(date)}
-                                        dateFormat="yyyy-MM-dd"
-                                        placeholderText="Select deadline"
-                                        required
-                                        className="w-full px-3 py-2 border border-gray-300 text-sm"
-                                    />
-                                </div>
-                            </div>
+
 
                             {/* Submit Button */}
                             <input
@@ -171,7 +186,7 @@ const AddEvent = () => {
                     </div>
                 </div>
             </div>
-         
+
         </>
     );
 };

@@ -6,7 +6,7 @@ import Footer from '../../../Component/Footer';
 
 const EventDetails = () => {
   const event = useLoaderData();
-  const { name, eventName, description, photo, deadline, email, eventType, _id, applyEmails = [] } = event;
+  const { name, eventName, location, description, photo, deadline, email, eventType, _id, applyEmails = [] } = event;
 
   const [hasApplied, setHasApplied] = useState(false);
   const [localApplyCount, setLocalApplyCount] = useState(applyEmails.length || 0);
@@ -49,11 +49,10 @@ const EventDetails = () => {
           <div className="">
             <div className="flex items-center justify-between">
               <h2 className="text-lg font-bold text-base-content roboto">{eventType}</h2>
-              <p className="text-lg font-bold text-base-content">
-                Total Applied: <span className="bg-green-600 text-white border border-white px-2 rounded-full">{localApplyCount}</span>
-              </p>
+              
+             
             </div>
-            
+            <h2 className=" text-lg font-bold text-base-content roboto mt-2">Location : <span className='text-sm font-medium roboto'>{location}</span></h2>
             <h3 className="text-sm mt-4 text-base-content font-semibold pb-4">
               Event Date: <span className="font-medium text-white bg-[#444b53] rounded-lg px-2 py-0.5">{deadline}</span>
             </h3>

@@ -8,7 +8,7 @@ import Loading from '../../Pages/Loading';
 import { AuthContext } from '../../Provider/AuthContext';
 
 const Home = () => {
-    const [searchText, setSearchText] = useState("");
+   
     const { loading } = use(AuthContext);
     const [events, setEvents] = useState([]);
     const [dataLoading, setDataLoading] = useState(true);
@@ -22,18 +22,7 @@ const Home = () => {
             })
     }, [])
 
-   useEffect(() => {
-        const delayDebounce = setTimeout(() => {
-            fetch(`http://localhost:3000/events?search=${searchText}`)
-                .then(res => res.json())
-                .then(data => {
-                    setEvents(data);
-                    setDataLoading(false);
-                });
-        }, 200); 
-
-        return () => clearTimeout(delayDebounce);
-    }, [searchText]);
+   
 
 
     if (loading || dataLoading) {
@@ -41,16 +30,7 @@ const Home = () => {
     }
     return (
         <div className=''>
-             <div className="flex justify-center gap-1 mt-9 items-center mb-6">
-                <h2 className='roboto font-medium'>Search Here:</h2>
-                <input
-                    type="text"
-                    placeholder="Search by event name..."
-                    value={searchText}
-                    onChange={(e) => setSearchText(e.target.value)}
-                    className="input input-bordered w-64"
-                />
-            </div>
+             
             <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2  lg:mx-auto mx-20 mb-14   gap-12 mt-10 lg:w-9/12 '>
                 {
                     events.map((event, index) =>

@@ -7,7 +7,7 @@ import { FaPenFancy } from 'react-icons/fa';
 
 
 const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = true }) => {
-    const { name, eventName,description,photo,deadline,email,eventType,_id } = event;
+    const { name,location, eventName,description,photo,deadline,email,eventType,_id } = event;
     console.log(event);
     console.log(index);
     const [show, setShow] = useState(false);
@@ -73,16 +73,19 @@ const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = 
                 }`}>
 
 
-            <div className="card bg-base-200 w-[370px] shadow-lg shadow-gray-500 transition-transform duration-300 hover:-translate-y-1">
+            <div className="card bg-base-200 h-[460px] w-[370px] shadow-lg shadow-gray-500 transition-transform duration-300 hover:-translate-y-1">
                 <figure>
                     <img
                         src={photo} className='h-[250px] object-cover rounded-2xl p-1 w-full'
                         alt="jobs" />
                 </figure>
                 <div className="card-body">
-                    <h2 className="text-lg font-bold text-base-content">{eventType}</h2>
-                    <h2 className="text-sm font-medium text-base-content">{eventName}</h2>
-                    <h3 className="text-sm text-base-content font-semibold pb-3">Event Date:<span className='font-medium text-white bg-green-600 rounded-lg px-2  py-0.5'>{deadline}</span> </h3>
+                    
+                    <h2 className="text-lg font-bold text-base-content">{eventName}</h2>
+                    <h2 className=" font-medium text-base-content">{eventType}</h2>
+                    
+
+                    <h3 className="text-sm text-base-content font-semibold pb-3">Event Date:<span className=' ml-2 font-medium text-white bg-green-600 rounded-lg px-2  py-0.5'>{deadline}</span> </h3>
                     
                     {
                         hideDetails && (

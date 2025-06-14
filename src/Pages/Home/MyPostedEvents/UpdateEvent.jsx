@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 
 const UpdateEvent = () => {
-  const { eventName, description, photo, deadline: defaultDeadline, eventType, _id } = useLoaderData();
+  const { eventName, description, photo,location, deadline: defaultDeadline, eventType, _id } = useLoaderData();
   console.log(_id);
   const { user } = useContext(AuthContext);
   const [deadline, setDeadline] = useState(defaultDeadline ? new Date(defaultDeadline) : null);
@@ -24,6 +24,7 @@ const UpdateEvent = () => {
       deadline: deadline?.toLocaleDateString('en-CA'), // ✅ Correct date format
       email: form.hr_email.value,
       eventType: form.eventType.value,
+       location: form.location.value,
     };
 
     fetch(`http://localhost:3000/events/${_id}`, {
@@ -106,22 +107,7 @@ const UpdateEvent = () => {
               </div>
             </div>
 
-            {/* Deadline */}
-            <div className="md:flex mb-8">
-              <div className="form-control md:w-1/2">
-                <label className="label">
-                  <span className="label-text text-gray-900 font-medium">Event Date</span>
-                </label>
-                <DatePicker
-                  selected={deadline}
-                  onChange={(date) => setDeadline(date)}
-                  dateFormat="yyyy-MM-dd"
-                  placeholderText="Select deadline"
-                  required
-                  className="w-full px-3 py-2 border border-gray-300 text-sm"
-                />
-              </div>
-            </div>
+           
 
             {/* Name and Email */}
             <div className="md:flex mb-8">
@@ -146,6 +132,36 @@ const UpdateEvent = () => {
                   name="hr_email"
                   defaultValue={user?.email}
                   readOnly
+                  className="w-full px-3 py-2 border border-gray-300 text-sm"
+                />
+              </div>
+            </div>
+
+            {/* Event Date location */}
+            <div className="md:flex items-center justify-between mb-8">
+              <div className="form-control md:w-1/2">
+                <label className="label">
+                  <span className="label-text mr-2 text-gray-900 font-medium">Event Date</span>
+                </label>
+                <DatePicker
+                  selected={deadline}
+                  onChange={(date) => setDeadline(date)}
+                  dateFormat="yyyy-MM-dd"
+                  placeholderText="Select deadline"
+                  required
+                  className="w-full px-3 py-2 border border-gray-300 text-sm"
+                />
+              </div>
+              <div className="form-control md:w-1/2 mt-3 md:mt-0 md:ml-4">
+                <label className="label">
+                  <span className="label-text text-gray-900 font-medium">Location</span>
+                </label>
+                <input
+                  type="text"
+                  name="location"
+                  defaultValue={location}
+                  placeholder="Event Location"
+                  required
                   className="w-full px-3 py-2 border border-gray-300 text-sm"
                 />
               </div>
