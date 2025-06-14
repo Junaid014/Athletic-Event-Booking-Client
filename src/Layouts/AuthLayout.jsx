@@ -9,7 +9,7 @@ const AuthLayout = () => {
             <header className=''>
                <Navbar/>
             </header>
-            <main className=' pt-16'>
+            <main className=''>
                 <Outlet/>
             </main>
             <footer>

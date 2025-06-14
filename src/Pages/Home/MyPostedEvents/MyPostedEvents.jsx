@@ -8,6 +8,7 @@ import Loading from '../../Loading';
 import { Link } from 'react-router';
 import NoPostedEvents from './NoPostedEvents';
 import Footer from '../../../Component/Footer';
+import { TbXboxXFilled } from 'react-icons/tb';
 
 const MyPostedEvents = () => {
   const { user, loading } = useContext(AuthContext);
@@ -98,9 +99,9 @@ const MyPostedEvents = () => {
                       <div className="flex gap-5">
                         <button
                           onClick={() => handleDelete(event._id)}
-                          className="btn btn-sm bg-[#EA4744ED] hover:bg-[#EA4744] text-white"
+                          className="btn btn-sm  bg-red-500 hover:bg-red-600  text-white"
                         >
-                          <MdDeleteOutline className="text-lg" />
+                           <TbXboxXFilled className="text-xl text-white"/>
                         </button>
                         <Link to={`/updateEvent/${event._id}`}>
                           <button className="btn btn-sm bg-orange-200">

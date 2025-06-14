@@ -30,7 +30,7 @@ const EventDetails = () => {
         if (data.modifiedCount > 0) {
           setHasApplied(true);
           setLocalApplyCount(prev => prev + 1);
-          toast.success('Applied successfully!');
+          toast.success('Applied for event successful!');
         } else {
           toast.error('You have already applied.');
         }
@@ -50,7 +50,7 @@ const EventDetails = () => {
             <div className="flex items-center justify-between">
               <h2 className="text-lg font-bold text-base-content roboto">{eventType}</h2>
               <p className="text-lg font-bold text-base-content">
-                Total Applied: <span className="bg-gray-700 text-white border border-white px-2 rounded-full">{localApplyCount}</span>
+                Total Applied: <span className="bg-green-600 text-white border border-white px-2 rounded-full">{localApplyCount}</span>
               </p>
             </div>
             
@@ -63,7 +63,7 @@ const EventDetails = () => {
             </div>
             <span className="flex border-b pb-4  border-dashed border-gray-400 gap-2 items-center mt-2">
               <p className="text-base font-medium">Contact:</p>
-              <p className="font-bold text-base-content">{email}</p>
+              <p className="font-bold text-sm text-base-content">{email}</p>
             </span>
             <p className="text-base font-bold mt-2">Event Details:</p>
             <p className="lg:w-[500px] text-base-content">{description}</p>

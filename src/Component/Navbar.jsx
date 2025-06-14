@@ -84,7 +84,7 @@ const Navbar = () => {
           Events
         </NavLink>
       </li>
-      
+
       {user && <li className="mr-2 text-sm font-semibold">
         <NavLink
           to="/myBookings"
@@ -196,15 +196,14 @@ const Navbar = () => {
           <div className="flex gap-3">
             <Link
               to="/auth/login"
-              className="px-5 cursor-pointer font-medium py-2.5 border border-[#1a8012]   duration-300 ease-in-out  
- rounded-md transition"
+              className="px-5 cursor-pointer font-medium py-3 border border-[#1a8012]   duration-300 ease-in-out rounded-md transition"
             >
               Login
             </Link>
 
             <Link
               to="/auth/signUp"
-              className="px-7 hover:px-8 py-6 hover:rounded-full btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
+              className="px-7  py-6 hover:rounded-full btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
 "
             >
               Get Started

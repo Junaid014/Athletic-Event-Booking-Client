@@ -82,7 +82,7 @@ const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = 
                 <div className="card-body">
                     <h2 className="text-lg font-bold text-base-content">{eventType}</h2>
                     <h2 className="text-sm font-medium text-base-content">{eventName}</h2>
-                    <h3 className="text-sm text-base-content font-semibold pb-3">Event Date:<span className='font-medium text-white bg-green-400 rounded-lg px-2  py-0.5'>{deadline}</span> </h3>
+                    <h3 className="text-sm text-base-content font-semibold pb-3">Event Date:<span className='font-medium text-white bg-green-600 rounded-lg px-2  py-0.5'>{deadline}</span> </h3>
                     
                     {
                         hideDetails && (

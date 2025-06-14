@@ -5,6 +5,8 @@ import { AuthContext } from '../../Provider/AuthContext';
 import Loading from '../Loading';
 import Footer from '../../Component/Footer';
 import NoBookingEvent from './NoBookingEvent';
+import { FcCancel } from 'react-icons/fc';
+import { TbXboxXFilled } from 'react-icons/tb';
 
 const MyBookings = () => {
     const { user, loading } = useContext(AuthContext);
@@ -109,9 +111,11 @@ const MyBookings = () => {
                                         <td>
                                             <button
                                                 onClick={() => handleCancelEvent(event._id)}
-                                                className="btn btn-sm bg-[#EA4744ED] hover:bg-[#EA4744] text-white"
+                                                className="btn btn-sm  bg-red-500 hover:bg-red-600  "
                                             >
-                                                <MdDeleteOutline className="text-lg" />
+                                              
+                                                <TbXboxXFilled className="text-xl text-white"/>
+                                                
                                             </button>
                                         </td>
                                     </tr>
