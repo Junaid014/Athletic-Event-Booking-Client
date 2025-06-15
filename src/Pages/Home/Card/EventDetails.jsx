@@ -39,7 +39,7 @@ const EventDetails = () => {
 
   return (
     <>
-      <div className="bg-base-200 rounded-lg px-8 py-8 lg:px-20 lg:py-20 w-11/12 mx-auto mb-14 mt-8">
+      <div className="bg-base-200 rounded-lg px-8 py-8 lg:px-20 lg:py-20 w-11/12 mx-auto mb-20 mt-8">
         <div className="flex flex-col lg:flex-row gap-10">
           <img
             src={photo}

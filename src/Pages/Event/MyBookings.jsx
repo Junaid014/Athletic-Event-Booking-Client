@@ -71,7 +71,7 @@ const MyBookings = () => {
 
     return (
         <div className='min-h-screen flex flex-col'>
-            <div className='flex-grow mb-14'>
+            <div className='flex-grow mb-20'>
                 {events.length === 0 ? (
                     <NoBookingEvent />
                 ) : (
@@ -79,8 +79,8 @@ const MyBookings = () => {
                         <table className="table table-zebra w-full text-sm">
                             <thead>
                                 <tr className="bg-gray-200 text-gray-800">
-                                    <th>No</th>
-                                    <th>Event Info</th>
+                                    <th >No</th>
+                                    <th className='lg:flex hidden'>Event Info</th>
                                     <th>Type</th>
                                     <th>Organizer</th>
                                     <th>Event Date</th>
@@ -102,8 +102,8 @@ const MyBookings = () => {
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className="font-bold">{event.eventName}</div>
-                                                    <div className="text-xs opacity-50">{event.description?.slice(0, 40)}...</div>
+                                                    <div className="font-bold lg:flex hidden">{event.eventName}</div>
+                                                    <div className="text-xs lg:flex hidden opacity-50">{event.description?.slice(0, 40)}...</div>
                                                 </div>
                                             </div>
                                         </td>

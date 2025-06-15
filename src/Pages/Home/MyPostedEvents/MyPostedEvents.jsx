@@ -67,7 +67,7 @@ const MyPostedEvents = () => {
               <thead>
                 <tr className="bg-gray-200 text-gray-800">
                   <th>No</th>
-                  <th>Event Info</th>
+                  <th className='lg:flex hidden'>Event Info</th>
                   <th>Type</th>
                   <th>Organizer</th>
                   <th>Event Date</th>
@@ -89,8 +89,8 @@ const MyPostedEvents = () => {
                           </div>
                         </div>
                         <div>
-                          <div className="font-bold">{event.eventName}</div>
-                          <div className="text-xs opacity-50">{event.description?.slice(0, 40)}...</div>
+                          <div className="font-bold lg:flex hidden">{event.eventName}</div>
+                          <div className="text-xs opacity-50 lg:flex hidden">{event.description?.slice(0, 40)}...</div>
                         </div>
                       </div>
                     </td>

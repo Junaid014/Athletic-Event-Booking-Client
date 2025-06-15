@@ -48,9 +48,9 @@ const AddEvent = () => {
     return (
         <>
         <div>
-            <div className='bg-gray-50 mb-14'>
+            <div className='bg-gray-50 mb-20'>
                 <div className='lg:w-7xl mx-auto'>
-                    <div className="px-24 pt-16">
+                    <div className="lg:px-24 px-9 pt-16">
                         <h2 className="text-3xl text-center text-[#374151] font-extrabold roboto">Add an Event</h2>
                         <p className='text-center text-[#1B1A1AB3] md:w-[900px] mx-auto mb-8'>
                             Fill in the event details below. Participants will be able to view and register.

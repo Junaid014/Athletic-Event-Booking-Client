@@ -60,31 +60,8 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="mr-2 text-sm font-semibold">
-        <NavLink
-          to="/addEvent"
-          className={({ isActive }) =>
-            isActive
-               ? 'text-[#1a8012] underline'
-              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
-          }
-        >
-          Add Event
-        </NavLink>
-      </li>
-      <li className="mr-2 text-sm font-semibold">
-        <NavLink
-          to="/browseEvents"
-          className={({ isActive }) =>
-            isActive
-             ? 'text-[#1a8012] underline'
-              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
-          }
-        >
-          Events
-        </NavLink>
-      </li>
 
+      
       {user && <li className="mr-2 text-sm font-semibold">
         <NavLink
           to="/myBookings"
@@ -98,6 +75,36 @@ const Navbar = () => {
         </NavLink>
       </li>}
 
+       <li className="mr-2 text-sm font-semibold">
+        <NavLink
+          to="/browseEvents"
+          className={({ isActive }) =>
+            isActive
+             ? 'text-[#1a8012] underline'
+              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
+          }
+        >
+         Browse Events
+        </NavLink>
+      </li>
+
+   
+     
+
+
+      
+   <li className="mr-2 text-sm font-semibold">
+        <NavLink
+          to="/addEvent"
+          className={({ isActive }) =>
+            isActive
+               ? 'text-[#1a8012] underline'
+              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
+          }
+        >
+          Add Event
+        </NavLink>
+      </li>
 
       {user && <li className="mr-2 text-sm font-semibold">
         <NavLink

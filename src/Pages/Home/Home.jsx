@@ -7,6 +7,7 @@ import Footer from '../../Component/Footer';
 import Loading from '../../Pages/Loading';
 import { AuthContext } from '../../Provider/AuthContext';
 import PopularEvent from '../Event/Popular/PopularEvent';
+import Slider from './Slider';
 
 const Home = () => {
    
@@ -31,6 +32,9 @@ const Home = () => {
     }
     return (
         <div className=''>
+
+            <Slider/>
+            <h2 className='text-4xl roboto font-bold text-center mt-20 mb-18 text-gray-800'>Most UpComing Events</h2>
              
             <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2  lg:mx-auto mx-20 mb-14   gap-12 mt-10 lg:w-9/12 '>
                 {

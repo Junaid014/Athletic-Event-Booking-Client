@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../Provider/AuthContext';
 import img1 from "../../assets/6272 (1).jpg"
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const SignUp = () => {
 
@@ -78,13 +79,17 @@ const SignUp = () => {
   })
   }
     return (
-        <div className='bg-[#f5f5f5] flex gap-3 items-center justify-center min-h-screen pt-9 md:pt-1 '>
+        <div className='bg-[#f5f5f5] flex  items-center justify-center min-h-screen pt-9 md:pt-1 '>
              
-             {/* <div className='flex-1'>
-              <img src={img1} alt="" />
-             </div> */}
+             <div >
+          <DotLottieReact className='w-[900px] h-[500px] md:flex hidden'
+      src="https://lottie.host/5d1d8c3b-d794-4cc9-89bc-0007d756ebdd/19q24B5DP3.lottie"
+      loop
+      autoplay
+    />
+        </div>
 
-          <div className=''>
+          <div className='lg:mr-42'>
       <div className='flex justify-center mt-4 items-center'>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl pt-6  px-2">
           <h2 className='text-3xl font-semibold text-center'>Register your Account</h2>
@@ -128,10 +133,10 @@ const SignUp = () => {
               </div>
 
 
-              <button type='submit' className="btn btn-neutral font-bold mt-4 bg-[#00a7ac] border-none">SignUp</button>
+              <button type='submit' className="btn btn-neutral font-bold mt-4 bg-green-400 border-none">SignUp</button>
             </form>
             <p className=' font-semibold text-center py-3'>
-              Already Have An Account? <Link to="/auth/login" className='text-[#60A5FA]'>Login</Link>
+              Already Have An Account? <Link to="/auth/login" className='text-[#00a7ac] '>Login</Link>
             </p>
           </div>
         </div>

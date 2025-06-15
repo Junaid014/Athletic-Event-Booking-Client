@@ -5,8 +5,8 @@ const PopularEvent = () => {
     return (
        
 
-            <div className="py-10 bg-gray-50">
-  <h2 className="text-3xl font-bold text-center roboto text-gray-800 mb-8">
+            <div className="py-10 bg-gray-50 mb-20">
+  <h2 className="text-4xl font-bold text-center roboto text-gray-800 mb-8">
     Popular Events Ongoing
   </h2>
 

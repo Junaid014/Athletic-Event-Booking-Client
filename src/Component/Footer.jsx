@@ -44,7 +44,7 @@ const Footer = () => {
         setEmail('');
     };
     return (
-        <footer className='bg-[#1e1e1e] mt-14'>
+        <footer className='bg-[#1e1e1e]'>
             <div className='w-11/12 mx-auto pt-24'>
                 <div className='lg:flex justify-between lg:items-center  border-b pb-14 border-[#F5F5F5]  '>
                     <div className='flex  mb-6 lg:mb-0 items-center gap-9 lg:gap-[420px] '>
@@ -60,7 +60,7 @@ const Footer = () => {
                                 <IoIosArrowRoundUp />
                             </p>
                         </div></div>
-                    <div className="grid grid-flow-col gap-5 cursor-pointer">
+                    <div className="flex gap-5 cursor-pointer">
 
                         <p className=' bg-[#23b016] w-17 p-4'>
                             <a href="https://x.com/"><SiFacebook className="text-white text-3xl" /></a>

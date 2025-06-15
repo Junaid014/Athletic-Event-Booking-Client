@@ -33,7 +33,7 @@ const BrowseEvents = () => {
                     className="input input-bordered w-64"
                 />
             </div>
-            <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2  lg:mx-auto mx-20 mb-14   gap-12 mt-10 lg:w-9/12 '>
+            <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 mb-20  lg:mx-auto mx-20   gap-12 mt-10 lg:w-9/12 '>
                 {
                 events.map((event,index)=>
                     <EventCard
