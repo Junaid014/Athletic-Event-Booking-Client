@@ -29,9 +29,17 @@ const AuthProvider = ({ children }) => {
     const updateUser=(updateData)=>{
         return updateProfile(auth.currentUser ,updateData)
     }
-    const signOutUser = () => {
-        return signOut(auth)
-    }
+    const signOutUser = async () => {
+    setLoading(true);
+
+  
+    await axios.post('http://localhost:3000/logout', {}, {
+        withCredentials: true
+    });
+
+    return signOut(auth);
+}
+
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {

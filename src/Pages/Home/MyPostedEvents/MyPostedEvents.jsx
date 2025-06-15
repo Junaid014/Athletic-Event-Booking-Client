@@ -17,7 +17,9 @@ const MyPostedEvents = () => {
 
   useEffect(() => {
     setDataLoading(true);
-    fetch(`http://localhost:3000/events?hr_email=${user.email}`)
+    fetch(`http://localhost:3000/events?email=${user.email}` ,{
+      credentials:'include'
+    })
       .then((res) => res.json())
       .then((data) => {
         setEvents(data);

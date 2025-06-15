@@ -76,7 +76,7 @@ const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = 
                 <figure>
                     <img
                         src={photo} className='h-[250px] object-cover rounded-2xl p-1 w-full'
-                        alt="jobs" />
+                        alt="event" />
                 </figure>
                 <div className="card-body">
                     

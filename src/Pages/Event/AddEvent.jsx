@@ -5,6 +5,7 @@ import Swal from 'sweetalert2';
 import axios from 'axios';
 
 import { AuthContext } from '../../Provider/AuthContext';
+import Footer from '../../Component/Footer';
 
 const AddEvent = () => {
     const { user } = useContext(AuthContext);
@@ -16,7 +17,7 @@ const AddEvent = () => {
 
         const eventData = {
             name: form.name.value,
-            email: form.hr_email.value,
+            email: form.email.value,
             eventName: form.eventName.value,
             eventType: form.eventType.value,
             deadline: deadline?.toLocaleDateString('en-CA'),
@@ -46,6 +47,7 @@ const AddEvent = () => {
 
     return (
         <>
+        <div>
             <div className='bg-gray-50 mb-14'>
                 <div className='lg:w-7xl mx-auto'>
                     <div className="px-24 pt-16">
@@ -111,7 +113,7 @@ const AddEvent = () => {
                                     </label>
                                     <input
                                         type="email"
-                                        name="hr_email"
+                                        name="email"
                                         defaultValue={user?.email}
                                         readOnly
                                         className="w-full px-3 py-2 border border-gray-300 text-sm"
@@ -186,7 +188,11 @@ const AddEvent = () => {
                         </form>
                     </div>
                 </div>
+                
             </div>
+            <Footer/>
+        </div>
+            
 
         </>
     );
