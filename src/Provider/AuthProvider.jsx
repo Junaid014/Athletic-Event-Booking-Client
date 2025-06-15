@@ -3,6 +3,7 @@ import { app } from '../Firebase/Firebase.init';
 
 import { useEffect, useState } from "react";
 import { AuthContext } from "./AuthContext";
+import axios from "axios";
 
 const auth = getAuth(app);
 
@@ -36,6 +37,15 @@ const AuthProvider = ({ children }) => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
             setLoading(false)
+
+            if(currentUser?.email){
+                const userData ={email: currentUser.email};
+                axios.post('http://localhost:3000/jwt',userData ,{
+                    withCredentials:true
+                })
+                .then(res=>console.log('token after jwt',res.data))
+                .catch(error=>console.log(error))
+            }
 
         })
         return () => {

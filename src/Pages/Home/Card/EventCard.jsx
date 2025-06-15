@@ -8,8 +8,7 @@ import { FaPenFancy } from 'react-icons/fa';
 
 const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = true }) => {
     const { name,location, eventName,description,photo,deadline,email,eventType,_id } = event;
-    console.log(event);
-    console.log(index);
+    
     const [show, setShow] = useState(false);
     const ref = useRef();
 

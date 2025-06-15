@@ -47,7 +47,7 @@ const Home = () => {
             <Link to='/browseEvents' className='mt-5 btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
  w-48 flex mx-auto '>Browse Events</Link>
 
-            <div className=''>
+            <div className='mt-32'>
                 <div className=' mt-14'>
                     <img className='w-full lg:h-[500px] ' src={image} alt="" />
                 </div>

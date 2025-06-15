@@ -17,7 +17,9 @@ const MyBookings = () => {
         if (user?.email) {
             const email = user.email.trim().toLowerCase();
             setDataLoading(true);
-            fetch(`http://localhost:3000/my-events/${email}`)
+            fetch(`http://localhost:3000/my-events/${email}`,{
+                credentials:'include'
+            })
                 .then(res => res.json())
                 .then(data => {
                     setEvents(data);
