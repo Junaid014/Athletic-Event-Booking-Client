@@ -175,7 +175,7 @@ const MyBookings = () => {
 
                 <h3 className="text-sm text-base-content font-semibold pb-3">
                   Event Date:
-                  <span className="ml-2 font-medium text-white bg-green-600 rounded-lg px-2 py-0.5">
+                  <span className="ml-2 font-medium text-black  roboto bg-[#cfe8cf] rounded-lg px-2 py-0.5">
                     {event.deadline}
                   </span>
                 </h3>
