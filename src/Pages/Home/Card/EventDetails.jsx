@@ -20,7 +20,7 @@ const EventDetails = () => {
   }, [applyEmails, user]);
 
   const handleApply = () => {
-    fetch(`http://localhost:3000/events/${_id}/apply`, {
+    fetch(`https://athletic-event-booking-platform-ser.vercel.app/events/${_id}/apply`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: user?.email }),
@@ -54,7 +54,7 @@ const EventDetails = () => {
             </div>
             <h2 className=" text-lg font-bold text-base-content roboto mt-2">Location : <span className='text-sm font-medium roboto'>{location}</span></h2>
             <h3 className="text-sm mt-4 text-base-content font-semibold pb-4">
-              Event Date: <span className="font-medium text-white  bg-green-600 rounded-lg px-2 py-0.5">{deadline}</span>
+              Event Date: <span className="font-medium text-black roboto  bg-[#cfe8cf] rounded-lg px-2 py-0.5">{deadline}</span>
             </h3>
             <div className="flex gap-3 items-center border-t pt-4 pb-2.5 border-dashed border-gray-400">
               <p className="text-sm font-medium">Organized By:</p>
@@ -76,7 +76,7 @@ const EventDetails = () => {
                   onClick={handleApply}
                   disabled={hasApplied}
                   className={`border border-gray-300  text-sm px-3 py-1 rounded ${
-                    hasApplied ? 'bg-red-500 text-white cursor-not-allowed' : 'bg-green-600 text-white cursor-pointer hover:bg-green-700'
+                    hasApplied ? 'bg-[#EA4744ED] text-white roboto cursor-not-allowed' : 'bg-[#5a865e] roboto text-white cursor-pointer '
                   }`}
                 >
                   {hasApplied ? '✔️ Applied' : 'Apply Now'}

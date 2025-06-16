@@ -9,7 +9,9 @@ const BrowseEvents = () => {
      const [searchText, setSearchText] = useState("");
      useEffect(() => {
         const delayDebounce = setTimeout(() => {
-            fetch(`http://localhost:3000/events?search=${searchText}`)
+            fetch(`https://athletic-event-booking-platform-ser.vercel.app/events?search=${searchText}`, {
+                credentials:'include'
+            })
                 .then(res => res.json())
                 .then(data => {
                     setEvents(data)

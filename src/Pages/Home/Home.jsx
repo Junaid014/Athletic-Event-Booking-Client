@@ -16,7 +16,7 @@ const Home = () => {
     const [dataLoading, setDataLoading] = useState(true);
     useEffect(() => {
         setDataLoading(true);
-        fetch('http://localhost:3000/events/recent')
+        fetch('https://athletic-event-booking-platform-ser.vercel.app/events/recent')
             .then(res => res.json())
             .then(data => {
                 setEvents(data)
@@ -48,7 +48,8 @@ const Home = () => {
                 }
 
             </div>
-            <Link to='/browseEvents' className='mt-5 btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
+            <Link to='/browseEvents' className='mt-5 roboto btn bg-gradient-to-l from-[#71a574] to-[#4f7d52] text-white rounded-lg font-medium shadow-md hover:from-[#4f7d52] hover:to-[#71a574] transition-all duration-300
+
  w-48 flex mx-auto '>Browse Events</Link>
 
             <div className='mt-32'>

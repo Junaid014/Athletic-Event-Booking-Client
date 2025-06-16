@@ -45,7 +45,7 @@ const Login = () => {
     sighInWithGoogle()
       .then(result => {
         const user = result.user;
-        console.log("User Info:", user.displayName, user.photoURL);
+        // console.log("User Info:", user.displayName, user.photoURL);
         setUser(user);
         navigate(`${location.state ? location.state : "/"}`);
         toast.success("Logged in Successfully");

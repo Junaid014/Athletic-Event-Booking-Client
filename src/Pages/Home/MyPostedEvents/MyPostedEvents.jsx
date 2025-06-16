@@ -17,7 +17,7 @@ const MyPostedEvents = () => {
 
   useEffect(() => {
     setDataLoading(true);
-    fetch(`http://localhost:3000/events?email=${user.email}` ,{
+    fetch(`https://athletic-event-booking-platform-ser.vercel.app/events?email=${user.email}` ,{
       credentials:'include'
     })
       .then((res) => res.json())
@@ -42,7 +42,7 @@ const MyPostedEvents = () => {
       confirmButtonText: "Yes, delete it!"
     }).then(result => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/events/${_id}`, {
+        fetch(`https://athletic-event-booking-platform-ser.vercel.app/events/${_id}`, {
           method: 'DELETE',
         })
           .then(res => res.json())

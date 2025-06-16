@@ -45,19 +45,19 @@ export const router = createBrowserRouter([
       },
       {
         path:'browseEvents',
-        loader:()=>fetch('http://localhost:3000/events'),
+        loader:()=>fetch('https://athletic-event-booking-platform-ser.vercel.app/events' ,{credentials:'include'}),
         Component:BrowseEvents
       },
       {
         path: "events/:id",
-        loader: ({ params }) => fetch(`http://localhost:3000/events/${params.id}`),
+        loader: ({ params }) => fetch(`https://athletic-event-booking-platform-ser.vercel.app/events/${params.id}`),
         element: <PrivetRoute>
           <EventDetails/>
         </PrivetRoute>
       },
       {
         path: "updateEvent/:id",
-        loader: ({ params }) => fetch(`http://localhost:3000/events/${params.id}`),
+        loader: ({ params }) => fetch(`https://athletic-event-booking-platform-ser.vercel.app/events/${params.id}`),
         Component:UpdateEvent
         
       },

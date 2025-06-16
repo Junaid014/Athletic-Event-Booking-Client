@@ -33,7 +33,7 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
 
   
-    await axios.post('http://localhost:3000/logout', {}, {
+    await axios.post('https://athletic-event-booking-platform-ser.vercel.app/logout', {}, {
         withCredentials: true
     });
 
@@ -48,7 +48,7 @@ const AuthProvider = ({ children }) => {
 
             if(currentUser?.email){
                 const userData ={email: currentUser.email};
-                axios.post('http://localhost:3000/jwt',userData ,{
+                axios.post('https://athletic-event-booking-platform-ser.vercel.app/jwt',userData ,{
                     withCredentials:true
                 })
                 .then(res=>console.log('token after jwt',res.data))

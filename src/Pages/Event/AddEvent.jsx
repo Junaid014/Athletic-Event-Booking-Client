@@ -26,7 +26,7 @@ const AddEvent = () => {
             location: form.location.value,
         };
 
-        axios.post('http://localhost:3000/events', eventData)
+        axios.post('https://athletic-event-booking-platform-ser.vercel.app/events', eventData)
             .then(res => {
                 if (res.data.insertedId) {
                     Swal.fire({

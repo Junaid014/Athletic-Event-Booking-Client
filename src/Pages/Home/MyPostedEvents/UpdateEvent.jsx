@@ -9,7 +9,7 @@ import Footer from '../../../Component/Footer';
 
 const UpdateEvent = () => {
   const { eventName, description, photo,location, deadline: defaultDeadline, eventType, _id } = useLoaderData();
-  console.log(_id);
+//   console.log(_id);
   const { user } = useContext(AuthContext);
   const [deadline, setDeadline] = useState(defaultDeadline ? new Date(defaultDeadline) : null);
 
@@ -28,7 +28,7 @@ const UpdateEvent = () => {
        location: form.location.value,
     };
 
-    fetch(`http://localhost:3000/events/${_id}`, {
+    fetch(`https://athletic-event-booking-platform-ser.vercel.app/events/${_id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ const UpdateEvent = () => {
         }
       })
       .catch((err) => {
-        console.error('Update failed:', err);
+        // console.error('Update failed:', err);
         Swal.fire({
           icon: 'error',
           title: 'Update failed!',

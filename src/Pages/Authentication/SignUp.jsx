@@ -69,7 +69,7 @@ const SignUp = () => {
     .then(result => {
       
       const user = result.user;
-      console.log("Google User:", user.displayName, user.photoURL);
+      // console.log("Google User:", user.displayName, user.photoURL);
       setUser(user); 
       navigate(`${location.state ? location.state : "/"}`);
       toast.success("Logged in Successfully");

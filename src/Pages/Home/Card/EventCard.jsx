@@ -84,13 +84,12 @@ const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = 
                     <h2 className=" font-medium text-base-content">{eventType}</h2>
                     
 
-                    <h3 className="text-sm text-base-content font-semibold pb-3">Event Date:<span className=' ml-2 font-medium text-white bg-green-600 rounded-lg px-2  py-0.5'>{deadline}</span> </h3>
+                    <h3 className="text-sm text-base-content font-semibold pb-3">Event Date:<span className=' ml-2 font-medium text-black bg-[#cfe8cf] rounded-lg px-2  roboto  py-0.5'>{deadline}</span> </h3>
                     
                     {
                         hideDetails && (
                             <div className="card-actions">
-                                <Link to={`/events/${_id}`} className="mt-5  btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
- w-full">View Details</Link>
+                                <Link to={`/events/${_id}`} className="mt-5  btn bg-gradient-to-l from-[#71a574] to-[#4f7d52] text-white rounded-lg font-medium shadow-md hover:from-[#4f7d52] hover:to-[#71a574] transition-all duration-300 w-full">View Details</Link>
                             </div>
                         )
                     }
