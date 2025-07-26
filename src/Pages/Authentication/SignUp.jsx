@@ -3,7 +3,6 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../Provider/AuthContext';
-import img1 from "../../assets/6272 (1).jpg"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const SignUp = () => {
