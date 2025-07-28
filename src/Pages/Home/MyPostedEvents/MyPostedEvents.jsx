@@ -79,9 +79,9 @@ const MyPostedEvents = () => {
                   <tr key={event._id}>
                     <th className='lg:flex hidden'>{index + 1}</th>
                     <td>
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center lg:gap-3">
                         <div className="avatar">
-                          <div className="mask mask-squircle h-12 w-12">
+                          <div className="mask mask-squircle h-12 lg:w-12 w-6">
                             <img
                               src={event.photo}
                               alt="event"
@@ -98,15 +98,15 @@ const MyPostedEvents = () => {
                     <td>{event.name}</td>
                     <td>{event.deadline}</td>
                     <td>
-                      <div className="flex gap-5">
+                      <div className="flex lg:gap-5 gap-2">
                         <button
                           onClick={() => handleDelete(event._id)}
-                          className="btn btn-sm  bg-red-500 hover:bg-red-600  text-white"
+                          className="btn lg:btn-sm btn-xs  bg-red-500 hover:bg-red-600  text-white"
                         >
-                           <TbXboxXFilled className="text-xl text-white"/>
+                           <TbXboxXFilled className="lg:text-xl text-base text-white"/>
                         </button>
                         <Link to={`/updateEvent/${event._id}`}>
-                          <button className="btn btn-sm bg-orange-200">
+                          <button className="btn lg:btn-sm btn-xs bg-orange-200">
                             <FaPenFancy className="text-sm" />
                           </button>
                         </Link>

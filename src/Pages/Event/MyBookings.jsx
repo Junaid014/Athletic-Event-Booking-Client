@@ -77,7 +77,7 @@ const MyBookings = () => {
 
       {events.length > 0 ? (
         <>
-          <h1 className="text-4xl roboto mt-8 font-semibold text-gray-800 text-center">
+          <h1 className="lg:text-4xl text-2xl roboto mt-8 font-semibold text-gray-800 text-center">
             Events You've Booked
           </h1>
 
@@ -123,7 +123,7 @@ const MyBookings = () => {
                 <tr key={event._id}>
                   <th className='lg:flex hidden'>{index + 1}</th>
                   <td>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center lg:gap-3">
                       <div className="avatar">
                         <div className="mask mask-squircle h-12 w-12">
                           <img src={event.photo} alt="event" />
@@ -143,9 +143,9 @@ const MyBookings = () => {
                   <td>
                     <button
                       onClick={() => handleCancelEvent(event._id)}
-                      className="btn btn-sm bg-red-500 hover:bg-red-600"
+                      className="btn lg:btn-sm btn-xs bg-red-500 hover:bg-red-600"
                     >
-                      <TbXboxXFilled className="text-xl text-white" />
+                      <TbXboxXFilled className="lg:text-xl text-sm text-white" />
                     </button>
                   </td>
                 </tr>
@@ -156,11 +156,11 @@ const MyBookings = () => {
       )}
 
       {events.length > 0 && viewType === 'card' && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 mx-auto mb-20 gap-6 px-4 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 lg:mx-auto mx-4 mb-20 gap-6 px-4 mt-10">
           {events.map((event) => (
             <div
               key={event._id}
-              className="card bg-base-200 h-[460px] w-[370px] shadow-lg shadow-gray-500 transition-transform duration-300 hover:-translate-y-1 mx-auto"
+              className="card bg-base-200 h-[460px] lg:w-[370px] shadow-lg shadow-gray-500 transition-transform duration-300 hover:-translate-y-1 mx-auto"
             >
               <figure>
                 <img

@@ -47,7 +47,7 @@ const Navbar = () => {
 
 
      const links = (
-    <div className="flex text-[#0F0F0FB3] font-medium">
+    <ul className="flex flex-col lg:flex-row bg-white/90 pl-3 pb-1.5 text-[#0F0F0FB3] font-medium">
       <li className="mr-2 text-sm font-semibold">
         <NavLink
           to="/"
@@ -119,7 +119,7 @@ const Navbar = () => {
         </NavLink>
       </li>}
 
-    </div>
+    </ul>
   );
     return (
        <div className="w-full bg-white/70  fixed top-0 left-0 right-0 shadow-sm z-50">
@@ -146,9 +146,9 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="flex justify-center items-center">
+          <div className="flex gap-0.5 justify-center items-center">
             <img className="w-12 h-6  cursor-pointer" src={btn_logo} alt="" />
-            <a className="lg:text-2xl  text-green-700 font-extrabold roboto">AthleticHub </a>
+            <a className="lg:text-2xl text-xl  text-green-700 font-extrabold roboto">AthleticHub </a>
           </div>
         </div>
 
