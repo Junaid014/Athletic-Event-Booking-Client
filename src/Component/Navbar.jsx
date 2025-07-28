@@ -4,7 +4,7 @@ import { AuthContext } from '../Provider/AuthContext';
 import { toast } from 'react-toastify';
 import { HiArrowLeftOnRectangle } from 'react-icons/hi2';
 import Loading from '../Pages/Loading';
-import btn_logo from "../assets/6272 (1).jpg"
+import btn_logo from "../assets/stretching-round-svgrepo-com2.svg"
 
 
 const Navbar = () => {
@@ -146,9 +146,9 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="flex gap-2 justify-center items-center">
-            <img className="w-16 h-16  cursor-pointer" src={btn_logo} alt="" />
-            <a className="text-2xl  text-black font-extrabold roboto">AthleticHub </a>
+          <div className="flex justify-center items-center">
+            <img className="w-12 h-6  cursor-pointer" src={btn_logo} alt="" />
+            <a className="text-2xl  text-green-700 font-extrabold roboto">AthleticHub </a>
           </div>
         </div>
 

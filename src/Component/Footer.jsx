@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/6272__1_-removebg-preview.png'
+import logo from '../assets/stretching-round-svgrepo-com2.svg'
 import { SiFacebook } from 'react-icons/si';
 import { FaPhoneVolume, FaXTwitter } from 'react-icons/fa6';
 import { IoLocationSharp, IoLogoLinkedin, IoLogoYoutube } from 'react-icons/io5';
@@ -51,7 +51,7 @@ const Footer = () => {
                         <div className=' flex gap-4 items-center'>
                             <img className='w-20 h-20 rounded-full text-[#23b016]' src={logo} alt="" />
                             <div className='flex flex-col'>
-                                <a className="text-2xl  text-white font-extrabold roboto">Athletic Hub </a>
+                                <a className="text-2xl   font-extrabold text-[#23b016] roboto">Athletic Hub </a>
                                 <p className="text-sm  text-white font-medium">An Athletics Platform </p>
                             </div>
                         </div>

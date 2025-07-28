@@ -48,7 +48,7 @@ const Home = () => {
                 }
 
             </div>
-            <Link to='/browseEvents' className='mt-5 roboto btn bg-gradient-to-l from-[#71a574] to-[#4f7d52] text-white rounded-lg font-medium shadow-md hover:from-[#4f7d52] hover:to-[#71a574] transition-all duration-300
+            <Link to='/browseEvents' className='mt-5 roboto btn bg-gradient-to-l from-[#51b756] to-[#276528] text-white rounded-lg font-medium shadow-md hover:from-[#276528] hover:to-[#51b756] transition-all duration-300
 
  w-48 flex mx-auto '>Browse Events</Link>
 

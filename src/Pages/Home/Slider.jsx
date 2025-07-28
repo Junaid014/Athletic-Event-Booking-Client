@@ -29,7 +29,7 @@ const Slider = () => {
     ];
 
     return (
-        <div className="w-full mt-4">
+        <div className="w-full">
             <Slide duration={5000} transitionDuration={700} infinite indicators arrows>
                 {slides.map((slide, index) => (
                     <div key={index} className="each-slide-effect">
