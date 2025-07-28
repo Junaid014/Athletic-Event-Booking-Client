@@ -45,7 +45,7 @@ const Footer = () => {
     };
     return (
         <footer className='bg-[#1e1e1e]'>
-            <div className='w-11/12 mx-auto pt-24'>
+            <div className='w-11/12 mx-auto lg:pt-24 pt-14'>
                 <div className='lg:flex justify-between lg:items-center  border-b pb-14 border-[#F5F5F5]  '>
                     <div className='flex  mb-6 lg:mb-0 items-center gap-9 lg:gap-[420px] '>
                         <div className=' flex gap-4 items-center'>
@@ -56,23 +56,23 @@ const Footer = () => {
                             </div>
                         </div>
                         <div onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                            <p className='text-white  text-4xl p-4 rounded-full w-17 bg-[#23b016] cursor-pointer'>
+                            <p className='text-white  text-4xl flex justify-center items-center rounded-full lg:w-18 lg:h-18 w-14 h-14 bg-[#23b016] cursor-pointer'>
                                 <IoIosArrowRoundUp />
                             </p>
                         </div></div>
                     <div className="flex gap-5 cursor-pointer">
 
-                        <p className=' bg-[#23b016] w-17 p-4'>
-                            <a href="https://x.com/"><SiFacebook className="text-white text-3xl" /></a>
+                        <p className=' bg-[#23b016] lg:w-17 w-13 lg:h-16 h-13 rounded-xl flex justify-center items-center'>
+                            <a href="https://x.com/"><SiFacebook className="text-white text-3xl  " /></a>
                         </p>
-                        <p className=' bg-[#23b016] w-17 p-4'>
-                            <a href="https://x.com/"><FaXTwitter className="text-white text-3xl" /></a>
+                        <p className=' bg-[#23b016] lg:w-17  w-13 lg:h-16 h-13 rounded-xl flex justify-center items-center'>
+                            <a href="https://x.com/"><FaXTwitter className="text-white text-3xl " /></a>
                         </p>
-                        <p className=' bg-[#23b016] w-17 p-4'>
-                            <a href="https://x.com/"><IoLogoLinkedin className="text-white text-3xl" /></a>
+                        <p className=' bg-[#23b016] lg:w-17 w-13 lg:h-16 h-13 rounded-xl flex justify-center items-center'>
+                            <a href="https://x.com/"><IoLogoLinkedin className="text-white text-3xl " /></a>
                         </p>
-                        <p className=' bg-[#23b016] w-17 p-4'>
-                            <a href="https://x.com/"><IoLogoYoutube className="text-white text-3xl" /></a>
+                        <p className=' bg-[#23b016] lg:w-17 w-13 lg:h-16 h-13 rounded-xl flex justify-center items-center'>
+                            <a href="https://x.com/"><IoLogoYoutube className="text-white text-3xl " /></a>
                         </p>
 
 
@@ -84,7 +84,7 @@ const Footer = () => {
                 <div className='pt-14 lg:flex  lg:justify-between border-b pb-14 border-[#F5F5F5]'>
                     {/* quick links */}
                     <div className='mb-7 lg:mb-0'>
-                        <h2 className='text-3xl font-bold roboto text-white mb-4'>Quick Links</h2>
+                        <h2 className='lg:text-3xl text-2xl font-bold roboto text-white mb-4'>Quick Links</h2>
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoIosArrowForward /></p>
                             <a className='text-lg font-medium hover:text-[#23b016]' href="">About Us</a>
@@ -106,7 +106,7 @@ const Footer = () => {
                     </div>
                     {/* Our Programs*/}
                     <div className='mb-7 lg:mb-0'>
-                        <h2 className='text-3xl font-bold roboto text-white mb-4'>Our Programs</h2>
+                        <h2 className='lg:text-3xl text-2xl font-bold roboto text-white mb-4'>Our Programs</h2>
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoIosArrowForward /></p>
                             <a className='text-lg font-medium hover:text-[#23b016]' href="">
@@ -134,7 +134,7 @@ const Footer = () => {
                     </div>
                     {/* contact info*/}
                     <div className='mb-7 lg:mb-0'>
-                        <h2 className='text-3xl font-bold roboto text-white mb-4'>Contact Info
+                        <h2 className='lg:text-3xl text-2xl font-bold roboto text-white mb-4'>Contact Info
                         </h2>
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><FaPhoneVolume /></p>
@@ -155,9 +155,9 @@ const Footer = () => {
                     </div>
                     {/* newsletter */}
                     <div>
-                        <h2 className='text-3xl font-bold roboto text-white mb-4'>Subscribe Newsletter
+                        <h2 className='lg:text-3xl text-2xl font-bold roboto text-white mb-4'>Subscribe Newsletter
                         </h2>
-                        <p className='text-white text-lg font-medium '>Subscribe to Our Newsletter to receive <br /> the newest updates and info.</p>
+                        <p className='text-white lg:text-lg font-medium '>Subscribe to Our Newsletter to receive <br /> the newest updates and info.</p>
                         <div className='flex gap-3 mt-4'>
                             <input
                                 type="text"
@@ -177,7 +177,7 @@ const Footer = () => {
                 </div>
 
                 <div className='pt-14 pb-10 text-white flex justify-between'>
-                    <h3 className='text-lg font-semibold roboto'>Copyright © 2025 Strivers, All rights reserved. Present by CreedCreatives</h3>
+                    <h3 className='lg:text-lg font-semibold roboto'>Copyright © 2025 Strivers, All rights reserved. Present by CreedCreatives</h3>
                     <div className='flex '>
                         <p className='text-lg font-medium hover:text-[#23b016] border-r border-white pr-6'>Terms & Conditions</p>
                         <p className='text-lg font-medium hover:text-[#23b016] pl-6'>Privacy Policys</p>

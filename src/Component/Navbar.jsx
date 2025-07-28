@@ -148,7 +148,7 @@ const Navbar = () => {
 
           <div className="flex justify-center items-center">
             <img className="w-12 h-6  cursor-pointer" src={btn_logo} alt="" />
-            <a className="text-2xl  text-green-700 font-extrabold roboto">AthleticHub </a>
+            <a className="lg:text-2xl  text-green-700 font-extrabold roboto">AthleticHub </a>
           </div>
         </div>
 
@@ -163,15 +163,15 @@ const Navbar = () => {
     
           <div>
             {user ? (
-          <div className=" flex gap-3 relative" ref={dropdownRef}>
+          <div className=" flex lg:gap-3 gap-2 relative" ref={dropdownRef}>
             <img
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="w-12 h-11 rounded-full cursor-pointer border border-gray-300"
+              className="lg:w-12 lg:h-11 w-10 h-10 rounded-full cursor-pointer border border-gray-300"
               src={user?.photoURL || btn_logo}
               alt="user"
             />
             <button
-              className="px-7 py-5.5 cursor-pointer btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
+              className="lg:px-7 lg:py-5.5 py-3 cursor-pointer btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
 "
               onClick={handleSignOut}
             >

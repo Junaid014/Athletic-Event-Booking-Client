@@ -72,7 +72,7 @@ const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = 
                 }`}>
 
 
-            <div className="card bg-base-200 h-[460px] w-[370px] shadow-lg shadow-gray-500 transition-transform duration-300 hover:-translate-y-1">
+            <div className="card bg-base-200 h-[460px] lg:w-[370px] shadow-lg shadow-gray-500 transition-transform duration-300 hover:-translate-y-1">
                 <figure>
                     <img
                         src={photo} className='h-[250px] object-cover rounded-2xl p-1 w-full'

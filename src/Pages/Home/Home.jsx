@@ -34,9 +34,9 @@ const Home = () => {
         <div className=''>
 
             <Slider/>
-            <h2 className='text-4xl roboto font-bold text-center mt-20 mb-18 text-gray-800'>Most UpComing Events</h2>
+            <h2 className='lg:text-4xl text-2xl roboto font-bold text-center mt-10 lg:mt-20 mb-3 lg:mb-18 text-gray-800'>Most UpComing Events</h2>
              
-            <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2  lg:mx-auto mx-20 mb-14   gap-12 mt-10 lg:w-9/12 '>
+            <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2  lg:mx-auto mx-5  mb-14   gap-12 mt-10 lg:w-9/12 '>
                 {
                     events.map((event, index) =>
                         <EventCard
@@ -52,7 +52,7 @@ const Home = () => {
 
  w-48 flex mx-auto '>Browse Events</Link>
 
-            <div className='mt-32'>
+            <div className='lg:mt-32 mt-5'>
                 <div className=' mt-14'>
                     <img className='w-full lg:h-[500px] ' src={image} alt="" />
                 </div>
