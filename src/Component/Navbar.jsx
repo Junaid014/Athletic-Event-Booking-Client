@@ -47,7 +47,7 @@ const Navbar = () => {
 
 
      const links = (
-    <ul className="flex flex-col lg:flex-row bg-white/90 pl-3 pb-1.5 text-[#0F0F0FB3] font-medium">
+    <ul className="flex flex-col lg:flex-row bg-white/70 lg:bg-transparent pl-3 pb-1.5 text-[#0F0F0FB3] font-medium">
       <li className="mr-2 text-sm font-semibold">
         <NavLink
           to="/"
@@ -62,6 +62,19 @@ const Navbar = () => {
       </li>
 
       
+      <li className="mr-2 text-sm font-semibold">
+        <NavLink
+          to="/browseEvents"
+          className={({ isActive }) =>
+            isActive
+             ? 'text-[#1a8012] underline'
+              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
+          }
+        >
+         Browse Events
+        </NavLink>
+      </li>
+
       {user && <li className="mr-2 text-sm font-semibold">
         <NavLink
           to="/myBookings"
@@ -75,18 +88,7 @@ const Navbar = () => {
         </NavLink>
       </li>}
 
-       <li className="mr-2 text-sm font-semibold">
-        <NavLink
-          to="/browseEvents"
-          className={({ isActive }) =>
-            isActive
-             ? 'text-[#1a8012] underline'
-              : 'text-[#1E293B] hover:text-[#1a8012] hover:underline'
-          }
-        >
-         Browse Events
-        </NavLink>
-      </li>
+       
 
    
      
