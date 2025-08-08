@@ -2,7 +2,7 @@ const PopularEventCard = ({ eventName, image, hoverImage }) => {
   return (
    <div className="w-full group  max-w-xs mx-auto group cursor-pointer">
 
-      <div className="relative  w-full h-56 overflow-hidden rounded-xl shadow-md p-2">
+      <div className="relative border border-gray-300 w-full h-56 overflow-hidden rounded-xl shadow-md p-2">
         <div className="relative w-full h-full rounded-lg overflow-hidden">
           {/* img 1 */}
           <img
@@ -18,7 +18,7 @@ const PopularEventCard = ({ eventName, image, hoverImage }) => {
           />
         </div>
       </div>
-      <h3 className="mt-4 text-lg text-gray-800 font-semibold text-center roboto transition-all duration-300 group-hover:translate-y-1 hover:text-green-700">{eventName}</h3>
+      <h3 className="mt-4 text-lg text-[#1a8012] font-semibold text-center roboto transition-all duration-300 group-hover:translate-y-1 hover:text-green-700">{eventName}</h3>
     </div>
   );
 };

@@ -5,12 +5,12 @@ const PopularEvent = () => {
     return (
        
 
-            <div className="mt-  mb-20">
+            <div className="  mb-26">
   <h2 className="lg:text-3xl  text-2xl font-bold text-center roboto text-[#1a8012] mb-12">
     Popular Events Ongoing
   </h2>
 
-  <div className="grid grid-cols-1  md:grid-cols-3 gap-6 px-4 md:px-20">
+  <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-4 px-0 md:px-20">
     <PopularEventCard
       eventName="Sprint"
       image="https://i.ibb.co/8LStqt3s/7138866-1.jpg "
@@ -25,6 +25,11 @@ const PopularEvent = () => {
       eventName="Badminton "
       image="https://i.ibb.co/KTyWpsg/2374948-fotor-20250614215332.png"
       hoverImage="https://i.ibb.co/bMFbc6J4/muktasim-azlan-rj-Wf-NR-AC5g-unsplash-1.jpg"
+    />
+    <PopularEventCard
+      eventName="Badminton "
+      image="https://i.ibb.co.com/fG2mdmPz/hands-with-basketball-ball-1.jpg"
+      hoverImage="https://i.ibb.co.com/FkMjmTw1/cool-black-man-doing-sports-playing-basketball-sunrise-jumping.jpg"
     />
   </div>
 </div>
