@@ -148,10 +148,10 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="flex gap-0.5 justify-center items-center">
+          <Link to='/' className="flex gap-0.5 justify-center items-center">
             <img className="w-12 h-6  cursor-pointer" src={btn_logo} alt="" />
             <a className="lg:text-2xl text-xl  text-green-700 font-extrabold roboto">AthleticHub </a>
-          </div>
+          </Link>
         </div>
 
         <div className="navbar-center hidden lg:flex">

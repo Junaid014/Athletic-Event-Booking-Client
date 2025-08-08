@@ -72,13 +72,13 @@ const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = 
                 }`}>
 
 
-            <div className="card bg-base-200  shadow-lg shadow-gray-500 transition-transform duration-300 hover:-translate-y-1">
+            <div className="card bg-base-200 h-[355px] shadow-lg shadow-gray-500 transition-transform duration-300 hover:-translate-y-1">
                 <figure>
                     <img
                         src={photo} className='h-[200px] object-cover rounded-2xl p-1 w-full'
                         alt="event" />
                 </figure>
-                <div className="px-2 py-2">
+                <div className="px-2 py-2 flex flex-col flex-grow">
                     
                     <h2 className="roboto font-semibold text-base-content">{eventName}</h2>
                     <h2 className=" text-sm mt-1 text-base-content">{eventType}</h2>
@@ -86,25 +86,31 @@ const EventCard = ({ index, event , onDelete, showDelete = false, hideDetails = 
 
                     <h3 className=" text-sm mt-1 text-base-content font-medium pb-3">Event Date:<span className=' ml-2 font-medium text-black bg-[#cfe8cf] rounded-lg px-2  roboto  py-0.5'>{deadline}</span> </h3>
                     
-                    {
-                        hideDetails && (
-                            <div className="card-actions">
-                                <Link to={`/events/${_id}`} className="mt-2  btn bg-gradient-to-l from-[#439347] to-[#4f7d52] text-white rounded-lg font-medium shadow-md hover:from-[#4f7d52] hover:to-[#71a574] transition-all duration-300 w-full">View Details</Link>
-                            </div>
-                        )
-                    }
-                    <div>
-                        {
-                            showDelete && (
-                                <div className=" justify-between flex">
-                                    <button onClick={handleDelete} className="btn bg-[#EA4744ED] hover:bg-[#EA4744] px-5"> <p className="text-xl text-white"><MdDeleteOutline /></p></button>
+                     <div className="mt-auto">
+            {hideDetails && (
+                <div className="card-actions">
+                    <Link
+                        to={`/events/${_id}`}
+                        className="mt-2 btn bg-gradient-to-l from-[#439347] to-[#4f7d52] text-white rounded-lg font-medium shadow-md hover:from-[#4f7d52] hover:to-[#71a574] transition-all duration-300 w-full"
+                    >
+                        View Details
+                    </Link>
+                </div>
+            )}
 
-
-                                    <Link to={`/updateEvent/${_id}`}><button className="btn px-5 bg-orange-200"><p><FaPenFancy /></p></button></Link>
-                                </div>
-                            )
-                        }
-                    </div>
+            {showDelete && (
+                <div className="justify-between flex mt-2">
+                    <button onClick={handleDelete} className="btn bg-[#EA4744ED] hover:bg-[#EA4744] px-5">
+                        <p className="text-xl text-white"><MdDeleteOutline /></p>
+                    </button>
+                    <Link to={`/updateEvent/${_id}`}>
+                        <button className="btn px-5 bg-orange-200">
+                            <p><FaPenFancy /></p>
+                        </button>
+                    </Link>
+                </div>
+            )}
+        </div>
                 </div>
             </div>
 
