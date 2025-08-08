@@ -64,16 +64,16 @@ const Footer = () => {
                     <div className="flex gap-5 cursor-pointer">
 
                         <p className=' bg-[#23b016] lg:w-17 w-13 lg:h-16 h-13 rounded-xl flex justify-center items-center'>
-                            <a href="https://x.com/"><SiFacebook className="text-white text-3xl  " /></a>
+                            <a href="https://www.facebook.com/junaid.hossen.7509"><SiFacebook className="text-white text-3xl  " /></a>
                         </p>
                         <p className=' bg-[#23b016] lg:w-17  w-13 lg:h-16 h-13 rounded-xl flex justify-center items-center'>
                             <a href="https://x.com/"><FaXTwitter className="text-white text-3xl " /></a>
                         </p>
                         <p className=' bg-[#23b016] lg:w-17 w-13 lg:h-16 h-13 rounded-xl flex justify-center items-center'>
-                            <a href="https://x.com/"><IoLogoLinkedin className="text-white text-3xl " /></a>
+                            <a href="https://www.linkedin.com/in/junaid-hossen/"><IoLogoLinkedin className="text-white text-3xl " /></a>
                         </p>
                         <p className=' bg-[#23b016] lg:w-17 w-13 lg:h-16 h-13 rounded-xl flex justify-center items-center'>
-                            <a href="https://x.com/"><IoLogoYoutube className="text-white text-3xl " /></a>
+                            <a href="https://www.youtube.com/"><IoLogoYoutube className="text-white text-3xl " /></a>
                         </p>
 
 
@@ -92,17 +92,14 @@ const Footer = () => {
                         </div>
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoIosArrowForward /></p>
-                            <a className='text-lg font-medium hover:text-[#23b016]' href="">
-                                Contact Us</a>
+                            <Link to="/contactUs" className='text-lg font-medium hover:text-[#23b016]' href="">
+                                Contact Us</Link>
                         </div>
 
-                        <div className='text-white mb-2 flex gap-2 items-center'>
-                            <p className='text-2xl font-medium'><IoIosArrowForward /></p>
-                            <a className='text-lg font-medium hover:text-[#23b016]' href="">Programs</a>
-                        </div>
+                       
                         <div className='text-white  flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoIosArrowForward /></p>
-                            <a className='text-lg font-medium hover:text-[#23b016]' href="">Events</a>
+                            <Link to="/browseEvents" className='text-lg font-medium hover:text-[#23b016]' href="">Events</Link>
                         </div>
                     </div>
                     {/* Our Programs*/}

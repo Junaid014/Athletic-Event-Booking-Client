@@ -17,6 +17,7 @@ import MyPostedEvents from "../Pages/Home/MyPostedEvents/MyPostedEvents";
 import UpdateEvent from "../Pages/Home/MyPostedEvents/UpdateEvent";
 import MyBookings from "../Pages/Event/MyBookings";
 import AboutUs from "../Pages/Home/AboutUs ";
+import ContactUs from "../Pages/Home/ContactUs ";
 
 
 
@@ -71,6 +72,10 @@ export const router = createBrowserRouter([
       {
         path:'aboutUs',
         element:<AboutUs/>
+      },
+      {
+        path:'contactUs',
+        element:<ContactUs/>
       },
 
 
