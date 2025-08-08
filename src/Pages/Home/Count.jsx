@@ -9,7 +9,7 @@ const Count = () => {
     <div className='w-11/12 mx-auto'>
 
     
-      <div ref={prev} className='lg:mb-24 border bg-[#eeeeee] border-gray-300 grid md:grid-cols-4 grid-cols-1 lg:gap-10'>
+      <div ref={prev} className=' border bg-[#eeeeee] border-gray-300 grid md:grid-cols-4 grid-cols-1 lg:gap-10'>
         {[
               {  count: 10, label: 'Years of Experience', duration: 4 },
           {  count: 1500, label: 'Events Hosted', duration: 7 },

@@ -5,12 +5,12 @@ const PopularEvent = () => {
     return (
        
 
-            <div className="py-10 bg-gray-50 mb-20">
-  <h2 className="lg:text-4xl text-2xl font-bold text-center roboto text-gray-800 mb-8">
+            <div className="mt-  mb-20">
+  <h2 className="lg:text-3xl  text-2xl font-bold text-center roboto text-gray-800 mb-12">
     Popular Events Ongoing
   </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-20">
+  <div className="grid grid-cols-1  md:grid-cols-3 gap-6 px-4 md:px-20">
     <PopularEventCard
       eventName="Sprint"
       image="https://i.ibb.co/8LStqt3s/7138866-1.jpg "

@@ -90,6 +90,9 @@ const AddEvent = () => {
                                         <option value="Hurdles">Hurdles</option>
                                         <option value="Relay Race">Relay Race</option>
                                         <option value="Badminton ">Badminton </option>
+                                        <option value="Volleyball ">Volleyball </option>
+                                        <option value="Cycling ">Cycling </option>
+                                        <option value="Basketball ">Basketball </option>
                                     </select>
                                 </div>
                             </div>

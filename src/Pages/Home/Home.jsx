@@ -34,7 +34,7 @@ const Home = () => {
         <div className=''>
 
             <Slider/>
-            <div className='bg-white/50'>
+            <div className=''>
                 <h2 className='lg:text-3xl text-2xl roboto font-bold text-center mt-10 lg:mt-20 mb-3 lg:mb-18 text-gray-800'>Most UpComing Events</h2>
              
             <div className='grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 bg-  lg:mx-auto mx-5  mb-14  gap-6  mt-10 lg:w-11/12 '>
