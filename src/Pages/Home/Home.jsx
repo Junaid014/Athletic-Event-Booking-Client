@@ -8,6 +8,7 @@ import Loading from '../../Pages/Loading';
 import { AuthContext } from '../../Provider/AuthContext';
 import PopularEvent from '../Event/Popular/PopularEvent';
 import Slider from './Slider';
+import FeedbackForm from './FeedbackForm ';
 
 const Home = () => {
    
@@ -34,8 +35,9 @@ const Home = () => {
         <div className=''>
 
             <Slider/>
+            
             <div className=''>
-                <h2 className='lg:text-3xl text-2xl roboto font-bold text-center mt-10 lg:mt-20 mb-3 lg:mb-18 text-gray-800'>Most UpComing Events</h2>
+                <h2 className='lg:text-3xl text-2xl roboto font-bold text-center mt-10 lg:mt-20 mb-3 lg:mb-18 text-[#1a8012]'>Most UpComing Events</h2>
              
             <div className='grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 bg-  lg:mx-auto mx-5  mb-14  gap-6  mt-10 lg:w-11/12 '>
                 {
@@ -61,6 +63,7 @@ const Home = () => {
                 <div className='relative bottom-24'> <Count /></div>
             </div>
             <PopularEvent/>
+            <FeedbackForm/>
 
             <Footer />
         </div>

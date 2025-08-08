@@ -39,12 +39,12 @@ const EventDetails = () => {
 
   return (
     <>
-      <div className="bg-base-200 rounded-lg px-8 py-8 lg:px-20 lg:py-20 w-11/12 mx-auto mb-20 mt-8">
-        <div className="flex flex-col lg:flex-row gap-10">
+      <div className="bg-gray-100 rounded-lg px-8 py-8 lg:px-20 lg:py-20  mb-20 mt-8">
+        <div className="flex  mx-auto flex-col lg:flex-row gap-20">
           <img
             src={photo}
             alt="event"
-            className="w-96 h-[300px] object-cover rounded-lg shadow-2xl"
+            className="w-[460px] object-cover rounded-lg shadow-2xl"
           />
           <div className="">
             <div className="flex items-center justify-between">

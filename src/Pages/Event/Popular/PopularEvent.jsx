@@ -6,7 +6,7 @@ const PopularEvent = () => {
        
 
             <div className="mt-  mb-20">
-  <h2 className="lg:text-3xl  text-2xl font-bold text-center roboto text-gray-800 mb-12">
+  <h2 className="lg:text-3xl  text-2xl font-bold text-center roboto text-[#1a8012] mb-12">
     Popular Events Ongoing
   </h2>
 

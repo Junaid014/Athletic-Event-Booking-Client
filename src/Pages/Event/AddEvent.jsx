@@ -53,7 +53,7 @@ const AddEvent = () => {
             <div className='bg-gray-50 mb-20'>
                 <div className='lg:w-7xl mx-auto'>
                     <div className="lg:px-24 px-9 pt-9 lg:pt-16">
-                        <h2 className="lg:text-3xl text-2xl text-center text-[#374151] font-extrabold roboto">Add an Event</h2>
+                        <h2 className="lg:text-3xl text-2xl text-center text-[#1a8012] font-extrabold roboto">Add an Event</h2>
                         <p className='text-center text-[#1B1A1AB3] md:w-[900px] mx-auto mb-8'>
                             Fill in the event details below. Participants will be able to view and register.
                         </p>
@@ -131,13 +131,13 @@ const AddEvent = () => {
                             <div className="md:flex items-center justify-between mb-8">
                                 <div className="form-control md:w-1/2">
                                     <label className="label">
-                                        <span className="label-text mr-2 text-gray-900 font-medium">Deadline</span>
+                                        <span className="label-text mr-2 text-gray-900 font-medium">Event Date</span>
                                     </label>
                                     <DatePicker
                                         selected={deadline}
                                         onChange={(date) => setDeadline(date)}
                                         dateFormat="yyyy-MM-dd"
-                                        placeholderText="Select deadline"
+                                        placeholderText="Select event date"
                                         required
                                         className="w-full px-3 py-2 border border-gray-300 text-sm"
                                     />

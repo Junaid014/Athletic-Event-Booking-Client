@@ -41,7 +41,7 @@ const BrowseEvents = () => {
 
     return (
         <div>
-            <h2 className='text-3xl font-semibold lg:font-extrabold text-center mt-9 roboto mb-8'>
+            <h2 className='lg:text-3xl text-2xl text-[#1a8012] font-semibold lg:font-extrabold text-center mt-9 roboto mb-8'>
                 Browse All the Events we have
             </h2>
 

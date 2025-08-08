@@ -124,7 +124,7 @@ const Navbar = () => {
     </ul>
   );
     return (
-       <div className="w-full bg-white/70  fixed top-0 left-0 right-0 shadow-sm z-50">
+       <div className="w-full bg-[#b3dfaf]  fixed top-0 left-0 right-0 shadow-sm z-50">
 
       <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start">
@@ -173,7 +173,8 @@ const Navbar = () => {
               alt="user"
             />
             <button
-              className="lg:px-7 lg:py-5.5 py-3 cursor-pointer btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
+              className="lg:px-7 lg:py-5.5 py-3 cursor-pointer btn bg-gradient-to-l from-[#4ad340] to-[#1a8012] text-white rounded-lg font-medium shadow-md hover:from-[#1a8012] hover:to-[#40aa38] transition-all duration-300
+
 "
               onClick={handleSignOut}
             >
@@ -212,7 +213,7 @@ const Navbar = () => {
 
             <Link
               to="/auth/signUp"
-              className="px-7  py-6 hover:rounded-full btn bg-gradient-to-l from-[#1a8012] to-[#14590e] text-white rounded-lg font-medium shadow-md hover:from-[#14590e] hover:to-[#1a8012] transition-all duration-300
+              className="px-7  py-6 hover:rounded-full btn bg-gradient-to-l from-[#4ad340] to-[#1a8012] text-white rounded-lg font-medium shadow-md hover:from-[#1a8012] hover:to-[#40aa38] transition-all duration-300
 "
             >
               Get Started

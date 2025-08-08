@@ -77,7 +77,7 @@ const MyBookings = () => {
 
       {events.length > 0 ? (
         <>
-          <h1 className="lg:text-4xl text-2xl roboto mt-8 font-semibold text-gray-800 text-center">
+          <h1 className="lg:text-3xl text-2xl roboto mt-8 font-semibold text-[#1a8012] text-center">
             Events You've Booked
           </h1>
 
