@@ -16,6 +16,7 @@ import BrowseEvents from "../Pages/Home/BrowseEvents";
 import MyPostedEvents from "../Pages/Home/MyPostedEvents/MyPostedEvents";
 import UpdateEvent from "../Pages/Home/MyPostedEvents/UpdateEvent";
 import MyBookings from "../Pages/Event/MyBookings";
+import AboutUs from "../Pages/Home/AboutUs ";
 
 
 
@@ -66,6 +67,10 @@ export const router = createBrowserRouter([
         element:<PrivetRoute>
           <MyBookings/>
         </PrivetRoute>
+      },
+      {
+        path:'aboutUs',
+        element:<AboutUs/>
       },
 
 

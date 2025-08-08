@@ -5,6 +5,7 @@ import { FaPhoneVolume, FaXTwitter } from 'react-icons/fa6';
 import { IoLocationSharp, IoLogoLinkedin, IoLogoYoutube } from 'react-icons/io5';
 import { IoIosArrowForward, IoIosArrowRoundUp, IoMdMailUnread } from 'react-icons/io';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router';
 const Footer = () => {
 
     const [email, setEmail] = useState("");
@@ -87,7 +88,7 @@ const Footer = () => {
                         <h2 className='lg:text-3xl text-2xl font-bold roboto text-white mb-4'>Quick Links</h2>
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoIosArrowForward /></p>
-                            <a className='text-lg font-medium hover:text-[#23b016]' href="">About Us</a>
+                           <Link className='text-lg font-medium hover:text-[#23b016]' to="/aboutUs">About Us</Link>
                         </div>
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoIosArrowForward /></p>
