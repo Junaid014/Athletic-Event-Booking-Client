@@ -1,9 +1,11 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaTwitter } from 'react-icons/fa';
+import Footer from '../../Component/Footer';
 
 const ContactUs = () => {
   return (
-    <section className="p-10 w-11/12 mx-auto bg-gray-50 rounded-lg shadow-md">
+   <section>
+        <section className="p-10 mb-20 mt-10 w-11/12 mx-auto bg-gray-50 rounded-lg shadow-md">
       <h1 className="text-4xl font-bold mb-8 text-center text-green-700 roboto">Contact Us</h1>
 
       <div className="grid md:grid-cols-2 gap-10">
@@ -80,6 +82,8 @@ const ContactUs = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+   </section>
   );
 };
 

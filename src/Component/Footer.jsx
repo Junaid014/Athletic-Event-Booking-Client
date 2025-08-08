@@ -92,8 +92,7 @@ const Footer = () => {
                         </div>
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoIosArrowForward /></p>
-                            <Link to="/contactUs" className='text-lg font-medium hover:text-[#23b016]' href="">
-                                Contact Us</Link>
+                           <Link className='text-lg font-medium hover:text-[#23b016]' to="/contactUs">Contact Us</Link>
                         </div>
 
                        
