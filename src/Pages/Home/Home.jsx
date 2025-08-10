@@ -9,6 +9,7 @@ import { AuthContext } from '../../Provider/AuthContext';
 import PopularEvent from '../Event/Popular/PopularEvent';
 import Slider from './Slider';
 import FeedbackForm from './FeedbackForm ';
+import Review from './Review';
 
 const Home = () => {
    
@@ -35,6 +36,7 @@ const Home = () => {
         <div className=''>
 
             <Slider/>
+            <Review/>
             
             <div className=''>
                 <h2 className='lg:text-3xl text-2xl roboto font-bold text-center mt-10 lg:mt-20 mb-3 lg:mb-18 text-[#1a8012]'>Most UpComing Events</h2>
