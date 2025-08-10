@@ -141,12 +141,12 @@ const Footer = () => {
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoMdMailUnread /></p>
                             <a className='text-lg font-medium hover:text-[#23b016]' href="">
-                                athletichub@mail.com</a>
+                                junaidhossen014@gmail.com</a>
                         </div>
 
                         <div className='text-white mb-2 flex gap-2 items-center'>
                             <p className='text-2xl font-medium'><IoLocationSharp /></p>
-                            <a className='text-lg font-medium hover:text-[#23b016]' href="">17059 Old Town St, London </a>
+                            <a className='text-lg font-medium hover:text-[#23b016]' href="">1206 Mohammodpur, Dhaka </a>
                         </div>
 
                     </div>

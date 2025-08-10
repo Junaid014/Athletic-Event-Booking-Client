@@ -8,21 +8,21 @@ const Slider = () => {
         {
             image: "https://i.ibb.co/yn2zVWkk/rosario-fernandes-h-FEO9-Jnu-b8-unsplash-2.jpg",
             eventName: "Junior Track Stars",
-            date: "July 2, 2025",
+            date: "September 2, 2025",
             description: "A fun and exciting sprint event just for kids aged 10–14! Run, cheer, and celebrate young athletic spirit.",
             cta: "Join Now"
         },
         {
             image: "https://i.ibb.co/MkTf2szd/arisa-chattasa-9-HLURpk-Np-XI-unsplash-1.jpg",
             eventName: "National Swimming Championship 2025",
-            date: "July 6, 2025",
+            date: "September 6, 2025",
             description: "Join top athletes in a thrilling water showdown. Dive into competition and glory.",
             cta: "Register Now"
         },
         {
             image: "https://i.ibb.co/bMFbc6J4/muktasim-azlan-rj-Wf-NR-AC5g-unsplash-1.jpg",
             eventName: "Badminton Open Tournament",
-            date: "July 10, 2025",
+            date: "September 10, 2025",
             description: "Smash your way to the top in this exciting open championship.",
             cta: "Register Now"
         }

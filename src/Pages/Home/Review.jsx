@@ -6,8 +6,8 @@ const reviews = [
   {
     name: "Rafiul Karim",
     role: "Event Organizer – Swimming Coach",
-    text: "Hosting my annual swimming competition through AthleticHub was a game-changer. The posting process was smooth, and the platform instantly connected me with competitive swimmers. Real-time application tracking saved me hours of manual work.",
-    img: "/images/rafiul.jpg"
+    text: "Hosting my annual swimming competition through AthleticHub was a game-changer. The posting process was smooth, and the platform instantly connected me with competitive swimmers.",
+    img: "https://i.ibb.co.com/hJFcpf1c/muscular-young-sport-person-with-his-arm-crossed-standing-race-track-1.jpg"
   },
   {
     name: "Shahriar Alam",
@@ -18,45 +18,45 @@ const reviews = [
   {
     name: "Sabbir Hossain",
     role: "Event Organizer – University Sports Club",
-    text: "AthleticHub saved me weeks of manual work while organizing our inter-university athletics championship. The filtering tools helped athletes find us easily, and the dashboard made participant management stress-free.",
-    img: "/images/sabbir.jpg"
+    text: "AthleticHub saved me weeks of manual work while organizing our inter-university athletics championship. The filtering tools helped athletes find us easily",
+    img: "https://i.ibb.co.com/FqkDktwY/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-ta.jpg"
   },
   {
     name: "Tanvir Mahmud",
     role: "Participant – Long Jump Enthusiast",
-    text: "I stumbled upon AthleticHub while looking for nearby athletic events. Signed up for a long jump competition in seconds, and got updates right up to event day. It’s like having a personal sports assistant.",
+    text: "I stumbled upon AthleticHub while looking for nearby athletic events. Signed up for a long jump competition in seconds, and got updates right up to event day.",
     img: "" // no image
   },
   {
     name: "Mehedi Rahman",
     role: "Event Organizer – Community Sports",
     text: "I organized a charity marathon through AthleticHub and it was stress-free from start to finish. The real-time participant counter boosted excitement, and I managed everything from my phone.",
-    img: "/images/mehedi.jpg"
+    img: "https://i.ibb.co.com/jvCxVpbZ/pexels-stefanstefancik-91227-1.jpg"
   },
   {
     name: "Asif Chowdhury",
     role: "Participant – Swimming Athlete",
     text: "Applying for events used to be complicated, but with AthleticHub it took less than a minute. I felt secure with the JWT-protected login, and my spot was confirmed instantly.",
-    img: "" // no image
+    img: "" 
   },
   {
     name: "Ashfaq Ahmed",
     role: "Event Organizer",
     text: "I host small competitions for my trainees, and AthleticHub gave me the perfect platform to reach more athletes. Posting events, setting deadlines, and tracking applicants is easier than ever.",
-    img: "/images/ashfaq.jpg"
+    img: "https://i.ibb.co.com/jvCxVpbZ/pexels-stefanstefancik-91227-1.jpg"
   },
   {
     name: "Rafiqul Islam",
     role: "Participant – College Athlete",
     text: "What I love most is the ability to filter events by type and location. My 'Applied Events' dashboard keeps everything organized so I never miss a sports opportunity.",
-    img: "" // no image
+    img: "" 
   }
 
 
 ];
 
 const ReviewCard = ({ review }) => {
-  // Initials তৈরি
+ 
   const initials = review.name
     .split(" ")
     .map(word => word[0])
@@ -65,7 +65,7 @@ const ReviewCard = ({ review }) => {
 
   return (
     <div className="bg-white shadow-md border border-gray-300 rounded-lg p-4 flex flex-col justify-between relative">
-      <p className="text-gray-700 mb-4 border-b pb-4 border-gray-300">{review.text}</p>
+      <p className="text-gray-700 mb-4 font-medium border-b pb-4 border-gray-300">{review.text}</p>
 
       <div className="flex items-center gap-3 mt-auto">
         {review.img ? (
@@ -95,26 +95,32 @@ const ReviewCard = ({ review }) => {
 const Review = () => {
   return (
     <section className="w-11/12 mx-auto px-4 py-12 lg:flex justify-between gap-6">
+
+      
       {/* Left Column */}
-      <div className="flex lg:w-1/4 flex-col gap-6">
-        <ReviewCard review={reviews[0]} />
+      <div className="flex mb-0 md:mb-6 lg:w-1/4 lg:flex-col gap-6">
+       
+          <ReviewCard  review={reviews[0]} />
+        
         <ReviewCard review={reviews[3]} />
       </div>
 
       {/* Middle Column */}
-      <div className="flex lg:w-2/4 flex-col gap-6">
+      <div className="flex lg:w-2/4 mt-6 lg:mt-0 flex-col gap-6">
         <ReviewCard review={reviews[1]} />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid   grid-cols-1 sm:grid-cols-2 gap-6">
           <ReviewCard review={reviews[5]} />
           <ReviewCard review={reviews[4]} />
         </div>
       </div>
 
       {/* Right Column */}
-      <div className="flex lg:w-1/4 flex-col gap-6">
+      <div className="flex lg:w-1/4 mt-6 lg:mt-0 flex-col gap-6">
         <ReviewCard review={reviews[2]} />
-        <ReviewCard review={reviews[7]} />
-        <ReviewCard review={reviews[6]} />
+        <div className="lg:mt-6 mt-0">
+          <ReviewCard review={reviews[7]} />
+        </div>
+        
       </div>
     </section>
   );
